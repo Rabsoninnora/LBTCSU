@@ -1,0 +1,206 @@
+/********************************************************************************
+** Form generated from reading UI file 'dashboard.ui'
+**
+** Created by: Qt User Interface Compiler version 6.10.0
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_DASHBOARD_H
+#define UI_DASHBOARD_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Dashboard
+{
+public:
+    QPushButton *pushButton;
+    QLabel *label_4;
+    QPushButton *btn_Dashboard_logout;
+    QPushButton *Side_Nav;
+    QPushButton *btn_Add_candidate;
+    QPushButton *btn_view_edit_candidate;
+    QPushButton *btn_cadidates_records;
+    QPushButton *btn_voter_records;
+    QLabel *BodyLabel;
+    QPushButton *btn_voter_records_2;
+
+    void setupUi(QDialog *Dashboard)
+    {
+        if (Dashboard->objectName().isEmpty())
+            Dashboard->setObjectName("Dashboard");
+        Dashboard->resize(1380, 763);
+        Dashboard->setStyleSheet(QString::fromUtf8("\n"
+"QDialog{\n"
+"\n"
+"\n"
+"\n"
+"}"));
+        pushButton = new QPushButton(Dashboard);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(220, 0, 1161, 111));
+        pushButton->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 1px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        label_4 = new QLabel(Dashboard);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(230, 10, 331, 91));
+        QFont font;
+        font.setPointSize(16);
+        font.setBold(true);
+        label_4->setFont(font);
+        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        btn_Dashboard_logout = new QPushButton(Dashboard);
+        btn_Dashboard_logout->setObjectName("btn_Dashboard_logout");
+        btn_Dashboard_logout->setGeometry(QRect(1150, 30, 101, 41));
+        btn_Dashboard_logout->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid white;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        Side_Nav = new QPushButton(Dashboard);
+        Side_Nav->setObjectName("Side_Nav");
+        Side_Nav->setGeometry(QRect(0, 0, 221, 763));
+        Side_Nav->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	background-color: rgb(0, 85, 127);\n"
+"	border-radius:0px;\n"
+"	color:rgb(188, 188, 188);\n"
+"}"));
+        btn_Add_candidate = new QPushButton(Dashboard);
+        btn_Add_candidate->setObjectName("btn_Add_candidate");
+        btn_Add_candidate->setGeometry(QRect(10, 220, 181, 41));
+        btn_Add_candidate->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        btn_view_edit_candidate = new QPushButton(Dashboard);
+        btn_view_edit_candidate->setObjectName("btn_view_edit_candidate");
+        btn_view_edit_candidate->setGeometry(QRect(10, 290, 181, 41));
+        btn_view_edit_candidate->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        btn_cadidates_records = new QPushButton(Dashboard);
+        btn_cadidates_records->setObjectName("btn_cadidates_records");
+        btn_cadidates_records->setGeometry(QRect(10, 360, 181, 41));
+        btn_cadidates_records->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        btn_voter_records = new QPushButton(Dashboard);
+        btn_voter_records->setObjectName("btn_voter_records");
+        btn_voter_records->setGeometry(QRect(10, 430, 181, 41));
+        btn_voter_records->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        BodyLabel = new QLabel(Dashboard);
+        BodyLabel->setObjectName("BodyLabel");
+        BodyLabel->setGeometry(QRect(220, 110, 1161, 763));
+        BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
+        btn_voter_records_2 = new QPushButton(Dashboard);
+        btn_voter_records_2->setObjectName("btn_voter_records_2");
+        btn_voter_records_2->setGeometry(QRect(10, 500, 181, 41));
+        btn_voter_records_2->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+
+        retranslateUi(Dashboard);
+
+        QMetaObject::connectSlotsByName(Dashboard);
+    } // setupUi
+
+    void retranslateUi(QDialog *Dashboard)
+    {
+        Dashboard->setWindowTitle(QCoreApplication::translate("Dashboard", "Dialog", nullptr));
+        pushButton->setText(QCoreApplication::translate("Dashboard", " LBTCSU VOTING  SYSTEM", nullptr));
+        label_4->setText(QCoreApplication::translate("Dashboard", "Admin Dashboard", nullptr));
+        btn_Dashboard_logout->setText(QCoreApplication::translate("Dashboard", "Logout", nullptr));
+        Side_Nav->setText(QString());
+        btn_Add_candidate->setText(QCoreApplication::translate("Dashboard", "Add Candidate", nullptr));
+        btn_view_edit_candidate->setText(QCoreApplication::translate("Dashboard", "Edit/View Candidate", nullptr));
+        btn_cadidates_records->setText(QCoreApplication::translate("Dashboard", "Candidates Records", nullptr));
+        btn_voter_records->setText(QCoreApplication::translate("Dashboard", "Voter Records", nullptr));
+        BodyLabel->setText(QString());
+        btn_voter_records_2->setText(QCoreApplication::translate("Dashboard", "Voter Records", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Dashboard: public Ui_Dashboard {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_DASHBOARD_H

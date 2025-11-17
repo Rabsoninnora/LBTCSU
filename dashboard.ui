@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QDialog" name="Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1380</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog{
+
+
+
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>0</y>
+     <width>1161</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 1px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string> LBTCSU VOTING  SYSTEM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>331</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Admin Dashboard</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Dashboard_logout">
+   <property name="geometry">
+    <rect>
+     <x>1150</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid white;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Side_Nav">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>763</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(0, 85, 127);
+	border-radius:0px;
+	color:rgb(188, 188, 188);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Add_candidate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Add Candidate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_view_edit_candidate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Edit/View Candidate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cadidates_records">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Candidates Records</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_voter_records">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Voter Records</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BodyLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>110</y>
+     <width>1161</width>
+     <height>763</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2980b9;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_voter_records_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Voter Records</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
