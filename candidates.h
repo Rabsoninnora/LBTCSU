@@ -2,6 +2,8 @@
 #define CANDIDATES_H
 
 #include <QDialog>
+#include <QSqlQuery>
+#include "mydb.h"
 
 namespace Ui {
 class Candidates;
@@ -22,8 +24,11 @@ private slots:
 
     void on_btn_search_clicked();
 
+    void on_btn_candidate_view_clicked();
+
 private:
     Ui::Candidates *ui;
+    void populateTable(QSqlQuery &query);
 };
 
 #endif // CANDIDATES_H

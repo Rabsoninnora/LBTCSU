@@ -188,6 +188,31 @@ QComboBox{
 
  </string>
     </property>
+    <item>
+     <property name="text">
+      <string>President</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Vice President</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>General Secretary</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Finance Coordinator</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Spots Coordinator</string>
+     </property>
+    </item>
    </widget>
    <widget class="QPushButton" name="btn_candidate_view">
     <property name="geometry">
@@ -267,6 +292,51 @@ QPushButton{
       <height>481</height>
      </rect>
     </property>
+    <column>
+     <property name="text">
+      <string>Candidate_ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fname</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Lname</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NRC</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Course</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Department</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Position</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ImageData</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ImageName</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
