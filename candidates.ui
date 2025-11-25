@@ -210,7 +210,7 @@ QComboBox{
     </item>
     <item>
      <property name="text">
-      <string>Spots Coordinator</string>
+      <string>Sports Coordinator</string>
      </property>
     </item>
    </widget>

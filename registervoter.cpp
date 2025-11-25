@@ -16,6 +16,8 @@ RegisterVoter::RegisterVoter(QWidget *parent)
 {
     setWindowTitle("Create Voter Account");
     setFixedSize(400, 250);
+    setWindowFlags(windowFlags()|Qt::WindowStaysOnTopHint);
+
 
     dbManager = MyDB::getInstance();
 

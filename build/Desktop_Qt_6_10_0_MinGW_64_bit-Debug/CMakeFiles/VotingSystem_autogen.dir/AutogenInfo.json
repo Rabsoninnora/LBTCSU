@@ -370,6 +370,12 @@
 			null
 		],
 		[
+			"C:/VoltingSystem/VotingSystem/castvote.h",
+			"MU",
+			"EWIEGA46WW/moc_castvote.cpp",
+			null
+		],
+		[
 			"C:/VoltingSystem/VotingSystem/dashboard.h",
 			"MU",
 			"EWIEGA46WW/moc_dashboard.cpp",
@@ -491,6 +497,7 @@
 	"SOURCES" : 
 	[
 		[ "C:/VoltingSystem/VotingSystem/candidates.cpp", "MU", null ],
+		[ "C:/VoltingSystem/VotingSystem/castvote.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/dashboard.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/main.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/mainwindow.cpp", "MU", null ],

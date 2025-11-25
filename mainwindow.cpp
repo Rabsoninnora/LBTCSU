@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setWindowTitle("v1.0");
     ptrUserAddmin = new UserAddmin();
-    ptrRegisterVoter = new RegisterVoter();
+
     // Creating a central widget
     QWidget *centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
@@ -33,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent)
     QVBoxLayout *sideNavLayout = new QVBoxLayout(sideNavFrame);
 
     // Creating buttons for side nav
-    QPushButton *btnSettings = new QPushButton("SignUP", this);
+    QPushButton *btnSettings = new QPushButton("    ", this);
     QPushButton *btnAdminLogin = new QPushButton("Login", this);
 
     // Set styles for buttons
@@ -94,5 +94,5 @@ void MainWindow::on_btn_admin_login_clicked()
 }
 
 void MainWindow::on_btn_admin_signup_clicked(){
-    ptrRegisterVoter->show();
+   //
 }

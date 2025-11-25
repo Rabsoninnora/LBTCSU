@@ -221,6 +221,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtSql/qtsql-config.h \
   C:/Qt/6.10.0/mingw_64/include/QtSql/qtsqlexports.h \
   C:/Qt/6.10.0/mingw_64/include/QtSql/qtsqlglobal.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/QComboBox \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QHBoxLayout \
@@ -236,6 +237,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qfiledialog.h \
@@ -504,4 +506,6 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/VoltingSystem/VotingSystem/candidates.h \
   C:/VoltingSystem/VotingSystem/mydb.h \
-  C:/VoltingSystem/VotingSystem/registercandidate.h
+  C:/VoltingSystem/VotingSystem/registercandidate.h \
+  C:/VoltingSystem/VotingSystem/registervoter.h \
+  C:/VoltingSystem/VotingSystem/voters.h

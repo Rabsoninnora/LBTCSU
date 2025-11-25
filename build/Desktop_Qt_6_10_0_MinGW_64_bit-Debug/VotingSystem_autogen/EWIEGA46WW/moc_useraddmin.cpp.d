@@ -516,4 +516,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/VoltingSystem/VotingSystem/candidates.h \
   C:/VoltingSystem/VotingSystem/dashboard.h \
   C:/VoltingSystem/VotingSystem/mydb.h \
-  C:/VoltingSystem/VotingSystem/registercandidate.h
+  C:/VoltingSystem/VotingSystem/registercandidate.h \
+  C:/VoltingSystem/VotingSystem/registervoter.h \
+  C:/VoltingSystem/VotingSystem/voterdashboard.h \
+  C:/VoltingSystem/VotingSystem/voters.h

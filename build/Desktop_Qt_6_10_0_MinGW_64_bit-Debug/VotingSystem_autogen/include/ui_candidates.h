@@ -278,7 +278,7 @@ public:
         comboBox_Position->setItemText(1, QCoreApplication::translate("Candidates", "Vice President", nullptr));
         comboBox_Position->setItemText(2, QCoreApplication::translate("Candidates", "General Secretary", nullptr));
         comboBox_Position->setItemText(3, QCoreApplication::translate("Candidates", "Finance Coordinator", nullptr));
-        comboBox_Position->setItemText(4, QCoreApplication::translate("Candidates", "Spots Coordinator", nullptr));
+        comboBox_Position->setItemText(4, QCoreApplication::translate("Candidates", "Sports Coordinator", nullptr));
 
         btn_candidate_view->setText(QCoreApplication::translate("Candidates", "View All Records", nullptr));
         btn_Reset_Candidate_Search->setText(QCoreApplication::translate("Candidates", "Reset", nullptr));

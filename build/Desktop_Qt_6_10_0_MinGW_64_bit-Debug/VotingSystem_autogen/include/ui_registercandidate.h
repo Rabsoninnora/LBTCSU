@@ -327,7 +327,7 @@ public:
         lineEdit_NRC->setPlaceholderText(QCoreApplication::translate("RegisterCandidate", "* Enter  Candidate NRC", nullptr));
         txtPositionCombo->setItemText(0, QCoreApplication::translate("RegisterCandidate", "President", nullptr));
         txtPositionCombo->setItemText(1, QCoreApplication::translate("RegisterCandidate", "Vice President", nullptr));
-        txtPositionCombo->setItemText(2, QCoreApplication::translate("RegisterCandidate", "General Secretory", nullptr));
+        txtPositionCombo->setItemText(2, QCoreApplication::translate("RegisterCandidate", "General Secretary", nullptr));
         txtPositionCombo->setItemText(3, QCoreApplication::translate("RegisterCandidate", "Sports Coordinator", nullptr));
         txtPositionCombo->setItemText(4, QCoreApplication::translate("RegisterCandidate", "Entertainment Coordinator", nullptr));
         txtPositionCombo->setItemText(5, QCoreApplication::translate("RegisterCandidate", "Finance Coordinator", nullptr));

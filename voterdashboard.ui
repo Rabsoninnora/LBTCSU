@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>VoterDashboard</class>
  <widget class="QDialog" name="VoterDashboard">
@@ -5,13 +6,255 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>1161</width>
+    <height>763</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QPushButton" name="Side_Nav">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>763</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(0, 85, 127);
+	border:2px solid green;
+	color:rgb(188, 188, 188);
+    
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1161</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 1px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string> LBTCSU VOTING  SYSTEM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_logout">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid white;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BodyLabel">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>110</y>
+     <width>1161</width>
+     <height>763</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2980b9;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_view_candidate">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>View Candidate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_AccountView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>View Account</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_CastVote">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>430</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Cast Vote</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ResultsView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>510</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>View Results</string>
+   </property>
+  </widget>
+  <zorder>pushButton</zorder>
+  <zorder>Side_Nav</zorder>
+  <zorder>btn_logout</zorder>
+  <zorder>BodyLabel</zorder>
+  <zorder>label_4</zorder>
+  <zorder>btn_view_candidate</zorder>
+  <zorder>btn_AccountView</zorder>
+  <zorder>btn_CastVote</zorder>
+  <zorder>btn_ResultsView</zorder>
  </widget>
  <resources/>
  <connections/>

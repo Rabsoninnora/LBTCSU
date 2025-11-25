@@ -740,6 +740,8 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingSystem_autogen/moc_predefs.h \
 	C:/VoltingSystem/VotingSystem/candidates.cpp \
 	C:/VoltingSystem/VotingSystem/candidates.h \
+	C:/VoltingSystem/VotingSystem/castvote.cpp \
+	C:/VoltingSystem/VotingSystem/castvote.h \
 	C:/VoltingSystem/VotingSystem/dashboard.cpp \
 	C:/VoltingSystem/VotingSystem/dashboard.h \
 	C:/VoltingSystem/VotingSystem/main.cpp \
@@ -753,11 +755,15 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/registervoter.h \
 	C:/VoltingSystem/VotingSystem/useraddmin.cpp \
 	C:/VoltingSystem/VotingSystem/useraddmin.h \
+	C:/VoltingSystem/VotingSystem/voterdashboard.cpp \
+	C:/VoltingSystem/VotingSystem/voterdashboard.h \
 	C:/VoltingSystem/VotingSystem/voters.cpp \
 	C:/VoltingSystem/VotingSystem/voters.h \
 	C:/VoltingSystem/VotingSystem/candidates.ui \
+	C:/VoltingSystem/VotingSystem/castvote.ui \
 	C:/VoltingSystem/VotingSystem/dashboard.ui \
 	C:/VoltingSystem/VotingSystem/mainwindow.ui \
 	C:/VoltingSystem/VotingSystem/registercandidate.ui \
+	C:/VoltingSystem/VotingSystem/voterdashboard.ui \
 	C:/VoltingSystem/VotingSystem/voters.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

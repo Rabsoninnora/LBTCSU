@@ -12,7 +12,7 @@ UserAddmin::UserAddmin(QWidget *parent)
     resize(400, 250);  // This to Increase my dialog size
 
     setWindowFlags(windowFlags()| Qt::WindowStaysOnTopHint);
-
+    ptrVoterDashboard = new VoterDashboard(this);
 
     // this to Create  my input widgets
     usernameLineEdit = new QLineEdit(this);
@@ -102,6 +102,8 @@ void UserAddmin::handleSubmit()
                 ptrDashboard = new Dashboard(this);
                 ptrDashboard->show();
             } else if (role == "Student") {
+            ptrVoterDashboard->show();
+
 
             }
             this->hide();

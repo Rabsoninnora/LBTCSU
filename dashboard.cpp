@@ -14,7 +14,9 @@ Dashboard::Dashboard(QWidget *parent)
    // setFixedSize(1270, 667);
     ui->setupUi(this);
     ptrRegisterCandidate = new RegisterCandidate();
+    ptrRegisterVoter = new RegisterVoter();
     ptrCandidates =new Candidates();
+    ptrVoters = new Voters();
 
     //setStyleSheet("background-color: #F5F5F5;");
     /*
@@ -38,6 +40,8 @@ Dashboard::~Dashboard()
     delete ui;
     delete ptrCandidates;
     delete ptrRegisterCandidate;
+    delete ptrVoters;
+    delete ptrRegisterVoter;
 }
 
 
@@ -56,5 +60,23 @@ void Dashboard::on_btn_cadidates_records_clicked()
 void Dashboard::on_btn_Dashboard_logout_clicked()
 {
     this->close();
+}
+
+
+void Dashboard::on_btn_Register_Voter_clicked()
+{
+    ptrVoters->show();
+}
+
+
+void Dashboard::on_btn_voter_account_clicked()
+{
+     ptrRegisterVoter->show();
+}
+
+
+void Dashboard::on_btn_voter_records_clicked()
+{
+
 }
 

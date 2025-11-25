@@ -6,13 +6,386 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>873</width>
-    <height>587</height>
+    <width>1154</width>
+    <height>694</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2980b9;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1154</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 1px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string> LBTCSU VOTING  SYSTEM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Voters_Registration">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>90</y>
+     <width>641</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">     
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:1px solid green;
+                    border-radius: 6px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>VOTERS REGISTRATION FORM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_RegisterVoter_back">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>60</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::GoHome"/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>160</y>
+     <width>1011</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 85, 127);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_SudentID_Voter">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QLineEdit{
+                    color: rgb(255, 255, 255);
+                    border:2px solid black;
+                    border-radius: 0px;
+                    padding: 0 8px;
+                    
+                    
+	                font: 700 9pt &quot;Segoe UI&quot;;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>* Enter Student ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Fname_voter">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>90</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QLineEdit{
+                    color: rgb(255, 255, 255);
+                    border:2px solid black;
+                    border-radius: 0px;
+                    padding: 0 8px;
+                    
+                    
+	                font: 700 9pt &quot;Segoe UI&quot;;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>* Enter  First Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image_field">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>231</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">  
+ QLabel {
+  border:2px solid green;
+  border-radius: 10px;
+  padding: 8px 8px;
+  background: rgb(255, 255, 255);
+ 
+};</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_browse_image_voter">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>220</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="text">
+     <string>Browse image</string>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::FolderOpen"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_submit_voter">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>300</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_Reset_Voter">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>300</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::ViewRestore"/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Lname_voter">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>160</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QLineEdit{
+                    color: rgb(255, 255, 255);
+                    border:2px solid black;
+                    border-radius: 0px;
+                    padding: 0 8px;
+                    
+                    
+	                font: 700 9pt &quot;Segoe UI&quot;;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>* Enter  Last Name</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="txtDepartmentCombo">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>230</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <italic>false</italic>
+      <fontweight>Medium</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QComboBox{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: #2980b9;
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Business</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Engineering</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hospitality</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cosmotology</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>

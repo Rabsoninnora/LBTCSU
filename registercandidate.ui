@@ -385,7 +385,7 @@ QComboBox{
     </item>
     <item>
      <property name="text">
-      <string>General Secretory</string>
+      <string>General Secretary</string>
      </property>
     </item>
     <item>

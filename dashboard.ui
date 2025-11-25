@@ -99,26 +99,6 @@ QPushButton{
     <string>Logout</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Side_Nav">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>221</width>
-     <height>763</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-	background-color: rgb(0, 85, 127);
-	border-radius:0px;
-	color:rgb(188, 188, 188);
-}</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_Add_candidate">
    <property name="geometry">
     <rect>
@@ -147,11 +127,11 @@ QPushButton{
     <string>Add Candidate</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_view_edit_candidate">
+  <widget class="QPushButton" name="btn_Register_Voter">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>290</y>
+     <y>340</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -172,14 +152,14 @@ QPushButton{
  </string>
    </property>
    <property name="text">
-    <string>Edit/View Candidate</string>
+    <string>Register Voters</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_cadidates_records">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>360</y>
+     <y>280</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -207,7 +187,7 @@ QPushButton{
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>430</y>
+     <y>400</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -247,11 +227,11 @@ QPushButton{
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_voter_records_2">
+  <widget class="QPushButton" name="btn_voter_account">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>500</y>
+     <y>460</y>
      <width>181</width>
      <height>41</height>
     </rect>
@@ -272,9 +252,39 @@ QPushButton{
  </string>
    </property>
    <property name="text">
-    <string>Voter Records</string>
+    <string>Create Voter Account</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="Side_Nav">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>763</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: rgb(0, 85, 127);
+	border-radius:0px;
+	color:rgb(188, 188, 188);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>Side_Nav</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_4</zorder>
+  <zorder>btn_Dashboard_logout</zorder>
+  <zorder>btn_Add_candidate</zorder>
+  <zorder>btn_Register_Voter</zorder>
+  <zorder>btn_cadidates_records</zorder>
+  <zorder>btn_voter_records</zorder>
+  <zorder>BodyLabel</zorder>
+  <zorder>btn_voter_account</zorder>
  </widget>
  <resources/>
  <connections/>
