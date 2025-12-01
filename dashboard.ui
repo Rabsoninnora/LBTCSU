@@ -31,13 +31,13 @@ QDialog{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">    
+    <string notr="true">     
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:2px solid  white;
                     border-radius: 1px;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 
@@ -47,28 +47,6 @@ QPushButton{
    </property>
    <property name="text">
     <string> LBTCSU VOTING  SYSTEM</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>10</y>
-     <width>331</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>Admin Dashboard</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_Dashboard_logout">
@@ -277,7 +255,6 @@ QPushButton{
   </widget>
   <zorder>Side_Nav</zorder>
   <zorder>pushButton</zorder>
-  <zorder>label_4</zorder>
   <zorder>btn_Dashboard_logout</zorder>
   <zorder>btn_Add_candidate</zorder>
   <zorder>btn_Register_Voter</zorder>

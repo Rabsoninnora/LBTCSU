@@ -352,10 +352,9 @@ QPushButton{
     <string notr="true">    
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
-                    border-radius: 1px;
+                    border:2px solid white;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 
@@ -414,7 +413,7 @@ QPushButton{
                     border:1px solid green;
                     border-radius: 6px;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 

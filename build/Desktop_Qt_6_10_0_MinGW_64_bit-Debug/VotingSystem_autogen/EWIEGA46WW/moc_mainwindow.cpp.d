@@ -516,6 +516,8 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/VoltingSystem/VotingSystem/candidates.h \
+  C:/VoltingSystem/VotingSystem/castedvotes.h \
+  C:/VoltingSystem/VotingSystem/castvote.h \
   C:/VoltingSystem/VotingSystem/dashboard.h \
   C:/VoltingSystem/VotingSystem/mydb.h \
   C:/VoltingSystem/VotingSystem/registercandidate.h \

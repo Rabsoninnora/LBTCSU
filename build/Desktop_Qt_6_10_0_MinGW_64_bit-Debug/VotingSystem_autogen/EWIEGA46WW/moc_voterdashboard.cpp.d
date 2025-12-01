@@ -178,12 +178,18 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpagesize.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qtextcursor.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qtextdocument.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qtextformat.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtguiglobal.h \
@@ -221,8 +227,12 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QFileDialog \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/QLabel \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QMessageBox \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QTableWidget \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -232,7 +242,10 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qlabel.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qmessagebox.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qslider.h \
@@ -490,4 +503,6 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
   C:/VoltingSystem/VotingSystem/candidates.h \
+  C:/VoltingSystem/VotingSystem/castedvotes.h \
+  C:/VoltingSystem/VotingSystem/castvote.h \
   C:/VoltingSystem/VotingSystem/mydb.h

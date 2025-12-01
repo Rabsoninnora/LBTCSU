@@ -487,13 +487,13 @@ QPushButton{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">    
+    <string notr="true">     
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:2px solid  white;
                     border-radius: 1px;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 

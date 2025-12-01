@@ -21,7 +21,6 @@ class Ui_Dashboard
 {
 public:
     QPushButton *pushButton;
-    QLabel *label_4;
     QPushButton *btn_Dashboard_logout;
     QPushButton *btn_Add_candidate;
     QPushButton *btn_Register_Voter;
@@ -58,14 +57,6 @@ public:
 "}\n"
 "\n"
 " "));
-        label_4 = new QLabel(Dashboard);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(230, 10, 331, 91));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(true);
-        label_4->setFont(font);
-        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
         btn_Dashboard_logout = new QPushButton(Dashboard);
         btn_Dashboard_logout->setObjectName("btn_Dashboard_logout");
         btn_Dashboard_logout->setGeometry(QRect(1150, 30, 101, 41));
@@ -176,7 +167,6 @@ public:
 "}"));
         Side_Nav->raise();
         pushButton->raise();
-        label_4->raise();
         btn_Dashboard_logout->raise();
         btn_Add_candidate->raise();
         btn_Register_Voter->raise();
@@ -194,7 +184,6 @@ public:
     {
         Dashboard->setWindowTitle(QCoreApplication::translate("Dashboard", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("Dashboard", " LBTCSU VOTING  SYSTEM", nullptr));
-        label_4->setText(QCoreApplication::translate("Dashboard", "Admin Dashboard", nullptr));
         btn_Dashboard_logout->setText(QCoreApplication::translate("Dashboard", "Logout", nullptr));
         btn_Add_candidate->setText(QCoreApplication::translate("Dashboard", "Add Candidate", nullptr));
         btn_Register_Voter->setText(QCoreApplication::translate("Dashboard", "Register Voters", nullptr));

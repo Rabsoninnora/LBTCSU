@@ -370,6 +370,12 @@
 			null
 		],
 		[
+			"C:/VoltingSystem/VotingSystem/castedvotes.h",
+			"MU",
+			"EWIEGA46WW/moc_castedvotes.cpp",
+			null
+		],
+		[
 			"C:/VoltingSystem/VotingSystem/castvote.h",
 			"MU",
 			"EWIEGA46WW/moc_castvote.cpp",
@@ -497,6 +503,7 @@
 	"SOURCES" : 
 	[
 		[ "C:/VoltingSystem/VotingSystem/candidates.cpp", "MU", null ],
+		[ "C:/VoltingSystem/VotingSystem/castedvotes.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/castvote.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/dashboard.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/main.cpp", "MU", null ],

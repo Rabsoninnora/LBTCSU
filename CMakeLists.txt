@@ -23,6 +23,7 @@ qt_add_executable(VotingSystem
     voters.h voters.cpp voters.ui
     voterdashboard.h voterdashboard.cpp voterdashboard.ui
     castvote.h castvote.cpp castvote.ui
+    castedvotes.h castedvotes.cpp castedvotes.ui
 
 )
 

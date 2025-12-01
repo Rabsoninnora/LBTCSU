@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include "candidates.h"
+#include "ui_castvote.h"
+#include "castvote.h"
+#include "castedvotes.h"
 
 namespace Ui {
 class VoterDashboard;
@@ -28,6 +31,8 @@ private slots:
 private:
     Ui::VoterDashboard *ui;
     Candidates *ptrCandidates;
+    CastVote  *ptrCastVote;
+    CastedVotes *ptrCastedVotes;
 };
 
 #endif // VOTERDASHBOARD_H

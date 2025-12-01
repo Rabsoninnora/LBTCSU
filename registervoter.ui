@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2980b9;</string>
+  </property>
   <widget class="QPushButton" name="btn_Candidate_back">
    <property name="geometry">
     <rect>
@@ -57,10 +60,10 @@ QPushButton{
     <string notr="true">    
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:2px solid  white;
                     border-radius: 1px;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 
@@ -85,10 +88,10 @@ QPushButton{
     <string notr="true">     
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
-                    border-radius: 6px;
+                    border:2px solid  white;
+                    border-radius: 1px;
                     padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
+                    background-color: green;
                     font: 500 11pt ;
                    
 

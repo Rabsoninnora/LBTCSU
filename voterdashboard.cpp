@@ -7,6 +7,8 @@ VoterDashboard::VoterDashboard(QWidget *parent) :
 {
     ui->setupUi(this);
     ptrCandidates =new Candidates(this);
+    ptrCastVote =new CastVote(this);
+    ptrCastedVotes = new CastedVotes(this);
 
 }
 
@@ -14,11 +16,13 @@ VoterDashboard::~VoterDashboard()
 {
     delete ui;
     delete ptrCandidates;
+    delete ptrCastVote;
+    delete ptrCastedVotes;
 }
 
 void VoterDashboard::on_btn_logout_clicked()
 {
-
+    this->close();
 }
 
 
@@ -36,6 +40,6 @@ void VoterDashboard::on_btn_AccountView_clicked()
 
 void VoterDashboard::on_btn_CastVote_clicked()
 {
-
+    ptrCastedVotes->show();
 }
 

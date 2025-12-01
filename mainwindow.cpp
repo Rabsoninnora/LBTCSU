@@ -66,7 +66,7 @@ MainWindow::MainWindow(QWidget *parent)
     BodyLabel->setAttribute(Qt::WA_TransparentForMouseEvents);
 
     // Create copyright footer
-    QLabel *footerLabel = new QLabel("UNZASU VOTING SYSTEM © Copyright 2025 All rights reserved.", this);
+    QLabel *footerLabel = new QLabel("LBTCSU VOTING SYSTEM © Copyright 2025 All rights reserved.", this);
     footerLabel->setAlignment(Qt::AlignCenter);
     footerLabel->setStyleSheet("font-size: 12px; color: white; padding: 5px;");
 
@@ -96,3 +96,4 @@ void MainWindow::on_btn_admin_login_clicked()
 void MainWindow::on_btn_admin_signup_clicked(){
    //
 }
+
