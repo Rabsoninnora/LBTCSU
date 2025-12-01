@@ -259,7 +259,7 @@ QPushButton{
       <x>10</x>
       <y>100</y>
       <width>471</width>
-      <height>391</height>
+      <height>331</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -297,10 +297,10 @@ QPushButton{
     <widget class="QPlainTextEdit" name="plainTextEdit">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>129</y>
-       <width>451</width>
-       <height>261</height>
+       <x>60</x>
+       <y>150</y>
+       <width>321</width>
+       <height>181</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -380,11 +380,25 @@ QPushButton{
    <widget class="QTableView" name="tableView">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>161</y>
-      <width>771</width>
-      <height>391</height>
+      <x>580</x>
+      <y>200</y>
+      <width>701</width>
+      <height>341</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView{
+
+   color: rgb(255, 255, 255);
+                    border:2px solid white;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 600 11pt ;
+                   
+
+
+}</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -406,7 +420,7 @@ QPushButton{
      <string>Position :</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_Position">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -418,15 +432,18 @@ QPushButton{
     <property name="styleSheet">
      <string notr="true">  
  QLabel {
-  border:2px solid green;
-  border-radius: 10px;
-  padding: 8px 8px;
-  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+                    border:2px solid white;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
  
 };</string>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
   </widget>

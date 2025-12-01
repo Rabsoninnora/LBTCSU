@@ -160,6 +160,9 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.10.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.10.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/QIcon \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/QPixmap \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/QStandardItemModel \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qbrush.h \
@@ -186,6 +189,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.10.0/mingw_64/include/QtGui/qstandarditemmodel.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtextcursor.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.10.0/mingw_64/include/QtGui/qtextformat.h \
@@ -227,6 +231,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QFileDialog \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/QHeaderView \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/QMessageBox \
@@ -242,6 +247,7 @@ C:/VoltingSystem/VotingSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingS
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.10.0/mingw_64/include/QtWidgets/qheaderview.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.10.0/mingw_64/include/QtWidgets/qmessagebox.h \

@@ -24,7 +24,6 @@ public:
     QPushButton *pushButton;
     QPushButton *btn_logout;
     QLabel *BodyLabel;
-    QLabel *label_4;
     QPushButton *btn_view_candidate;
     QPushButton *btn_AccountView;
     QPushButton *btn_CastVote;
@@ -34,7 +33,7 @@ public:
     {
         if (VoterDashboard->objectName().isEmpty())
             VoterDashboard->setObjectName("VoterDashboard");
-        VoterDashboard->resize(1161, 763);
+        VoterDashboard->resize(1399, 763);
         Side_Nav = new QPushButton(VoterDashboard);
         Side_Nav->setObjectName("Side_Nav");
         Side_Nav->setGeometry(QRect(0, 0, 221, 763));
@@ -46,15 +45,14 @@ public:
 "}"));
         pushButton = new QPushButton(VoterDashboard);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(0, 0, 1161, 111));
+        pushButton->setGeometry(QRect(0, 0, 1399, 111));
         pushButton->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
-        pushButton->setStyleSheet(QString::fromUtf8("    \n"
+        pushButton->setStyleSheet(QString::fromUtf8("     \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
-"                    border-radius: 1px;\n"
+"                    border:2px solid white;\n"
 "                    padding: 0 8px;\n"
-"                    background-color: rgb(255, 267, 245);\n"
+"                    background-color: green;\n"
 "                    font: 500 11pt ;\n"
 "                   \n"
 "\n"
@@ -63,7 +61,7 @@ public:
 " "));
         btn_logout = new QPushButton(VoterDashboard);
         btn_logout->setObjectName("btn_logout");
-        btn_logout->setGeometry(QRect(990, 30, 101, 41));
+        btn_logout->setGeometry(QRect(1260, 40, 101, 41));
         btn_logout->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -79,17 +77,8 @@ public:
 " "));
         BodyLabel = new QLabel(VoterDashboard);
         BodyLabel->setObjectName("BodyLabel");
-        BodyLabel->setGeometry(QRect(220, 110, 1161, 763));
+        BodyLabel->setGeometry(QRect(220, 132, 1181, 741));
         BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
-        label_4 = new QLabel(VoterDashboard);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(230, 20, 141, 51));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(true);
-        label_4->setFont(font);
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-        label_4->setAlignment(Qt::AlignmentFlag::AlignCenter);
         btn_view_candidate = new QPushButton(VoterDashboard);
         btn_view_candidate->setObjectName("btn_view_candidate");
         btn_view_candidate->setGeometry(QRect(20, 300, 181, 41));
@@ -158,7 +147,6 @@ public:
         Side_Nav->raise();
         btn_logout->raise();
         BodyLabel->raise();
-        label_4->raise();
         btn_view_candidate->raise();
         btn_AccountView->raise();
         btn_CastVote->raise();
@@ -176,7 +164,6 @@ public:
         pushButton->setText(QCoreApplication::translate("VoterDashboard", " LBTCSU VOTING  SYSTEM", nullptr));
         btn_logout->setText(QCoreApplication::translate("VoterDashboard", "Logout", nullptr));
         BodyLabel->setText(QString());
-        label_4->setText(QCoreApplication::translate("VoterDashboard", "Dashboard", nullptr));
         btn_view_candidate->setText(QCoreApplication::translate("VoterDashboard", "View Candidate", nullptr));
         btn_AccountView->setText(QCoreApplication::translate("VoterDashboard", "View Account", nullptr));
         btn_CastVote->setText(QCoreApplication::translate("VoterDashboard", "Cast Vote", nullptr));

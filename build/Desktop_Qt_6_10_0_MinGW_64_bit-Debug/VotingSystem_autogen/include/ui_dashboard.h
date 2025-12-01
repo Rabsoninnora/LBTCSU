@@ -44,13 +44,13 @@ public:
         pushButton = new QPushButton(Dashboard);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(220, 0, 1161, 111));
-        pushButton->setStyleSheet(QString::fromUtf8("    \n"
+        pushButton->setStyleSheet(QString::fromUtf8("     \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:2px solid  white;\n"
 "                    border-radius: 1px;\n"
 "                    padding: 0 8px;\n"
-"                    background-color: rgb(255, 267, 245);\n"
+"                    background-color: green;\n"
 "                    font: 500 11pt ;\n"
 "                   \n"
 "\n"

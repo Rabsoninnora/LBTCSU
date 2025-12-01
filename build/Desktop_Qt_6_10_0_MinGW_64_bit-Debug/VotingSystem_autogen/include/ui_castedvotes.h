@@ -40,7 +40,7 @@ public:
     QFrame *line;
     QTableView *tableView;
     QLabel *label;
-    QLabel *label_2;
+    QLabel *label_Position;
     QPushButton *SubHeading;
     QPushButton *btn_back;
 
@@ -187,7 +187,7 @@ public:
         btn_Reset->setIcon(icon);
         VoterDetailFrame = new QFrame(BackgroundFrame);
         VoterDetailFrame->setObjectName("VoterDetailFrame");
-        VoterDetailFrame->setGeometry(QRect(10, 100, 471, 391));
+        VoterDetailFrame->setGeometry(QRect(10, 100, 471, 331));
         VoterDetailFrame->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
         VoterDetailFrame->setFrameShape(QFrame::Shape::StyledPanel);
         VoterDetailFrame->setFrameShadow(QFrame::Shadow::Raised);
@@ -204,7 +204,7 @@ public:
 "};"));
         plainTextEdit = new QPlainTextEdit(VoterDetailFrame);
         plainTextEdit->setObjectName("plainTextEdit");
-        plainTextEdit->setGeometry(QRect(10, 129, 451, 261));
+        plainTextEdit->setGeometry(QRect(60, 150, 321, 181));
         plainTextEdit->setStyleSheet(QString::fromUtf8("QPlainTextEdit{\n"
 "\n"
 "    background-color: #1B263B;\n"
@@ -244,7 +244,19 @@ public:
         line->setFrameShadow(QFrame::Shadow::Sunken);
         tableView = new QTableView(BackgroundFrame);
         tableView->setObjectName("tableView");
-        tableView->setGeometry(QRect(530, 161, 771, 391));
+        tableView->setGeometry(QRect(580, 200, 701, 341));
+        tableView->setStyleSheet(QString::fromUtf8("QTableView{\n"
+"\n"
+"   color: rgb(255, 255, 255);\n"
+"                    border:2px solid white;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 600 11pt ;\n"
+"                   \n"
+"\n"
+"\n"
+"}"));
         label = new QLabel(BackgroundFrame);
         label->setObjectName("label");
         label->setGeometry(QRect(550, 120, 91, 31));
@@ -252,15 +264,18 @@ public:
         font1.setPointSize(10);
         font1.setBold(true);
         label->setFont(font1);
-        label_2 = new QLabel(BackgroundFrame);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(670, 110, 271, 41));
-        label_2->setStyleSheet(QString::fromUtf8("  \n"
+        label_Position = new QLabel(BackgroundFrame);
+        label_Position->setObjectName("label_Position");
+        label_Position->setGeometry(QRect(670, 110, 271, 41));
+        label_Position->setStyleSheet(QString::fromUtf8("  \n"
 " QLabel {\n"
-"  border:2px solid green;\n"
-"  border-radius: 10px;\n"
-"  padding: 8px 8px;\n"
-"  background: rgb(255, 255, 255);\n"
+"  color: rgb(255, 255, 255);\n"
+"                    border:2px solid white;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
 " \n"
 "};"));
         SubHeading = new QPushButton(CastedVotes);
@@ -320,7 +335,7 @@ public:
         plainTextEdit->setPlainText(QString());
         btn_search_Candidet->setText(QCoreApplication::translate("CastedVotes", "Search", nullptr));
         label->setText(QCoreApplication::translate("CastedVotes", "Position :", nullptr));
-        label_2->setText(QCoreApplication::translate("CastedVotes", "TextLabel", nullptr));
+        label_Position->setText(QString());
         SubHeading->setText(QCoreApplication::translate("CastedVotes", "SEARCH YOUR RECORD THEN SEARCH CANDIDATE RECORD", nullptr));
         btn_back->setText(QCoreApplication::translate("CastedVotes", "Back", nullptr));
     } // retranslateUi
