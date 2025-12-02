@@ -264,4 +264,60 @@ void CastedVotes::handleVoteToggle(QStandardItem *item)
         item->setCheckState(Qt::Unchecked);
         return;
     }
+
+    // Identify candidate details from the row
+    int row = item->row();
+    QString candidateID = m_model->item(row, 0)->text();
+    QString fname       = m_model->item(row, 1)->text();
+    QString lname       = m_model->item(row, 2)->text();
+
+    QString candidateName = fname + " " + lname;
+
+    // Ask for confirmation
+    QMessageBox::StandardButton reply = QMessageBox::question(
+        this,
+        "Confirm Vote",
+        QString("Are you sure you want to vote for %1 in position %2?")
+            .arg(candidateName)
+            .arg(m_currentPosition),
+        QMessageBox::Yes | QMessageBox::No
+        );
+
+    if (reply == QMessageBox::No) {
+        item->setCheckState(Qt::Unchecked);
+        return;
+    }
+
+    // Insert vote into database
+    QSqlDatabase db = MyDB::getInstance()->getDBInstance();
+    QSqlQuery query(db);
+
+    query.prepare("INSERT INTO VotesTotal (StudentID, CandidateID, Position) "
+                  "VALUES (:studentID, :candidateID, :position)");
+
+    query.bindValue(":studentID", m_currentStudentID);
+    query.bindValue(":candidateID", candidateID);
+    query.bindValue(":position", m_currentPosition);
+
+    if (!query.exec()) {
+        QString err = query.lastError().text();
+        if (err.contains("UNIQUE", Qt::CaseInsensitive)) {
+            QMessageBox::information(this, "Already Voted",
+                                     QString("You have already voted for a candidate in position %1.")
+                                         .arg(m_currentPosition));
+        } else {
+            QMessageBox::critical(this, "Vote Error",
+                                  "Failed to cast vote: " + err);
+        }
+        item->setCheckState(Qt::Unchecked);
+        return;
+    }
+
+    QMessageBox::information(this, "Vote Cast",
+                             QString("Your vote for %1 in position %2 has been recorded.")
+                                 .arg(candidateName)
+                                 .arg(m_currentPosition));
+
+    // Optionally disable further changes for this row
+    item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
 }

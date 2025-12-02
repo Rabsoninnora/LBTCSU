@@ -1,11 +1,18 @@
 #include "voterdashboard.h"
 #include "ui_voterdashboard.h"
+#include <QPixmap>
 
 VoterDashboard::VoterDashboard(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::VoterDashboard)
 {
     ui->setupUi(this);
+    QPixmap bg(":C:/VoltingSystem/VotingSystem/st.jpg");
+    ui->BodyLabel->setPixmap(bg.scaled(ui->BodyLabel->size(),
+                                       Qt::KeepAspectRatioByExpanding,
+                                       Qt::SmoothTransformation));
+    ui->BodyLabel->setScaledContents(true); // ensures it fills the label
+
     ptrCandidates =new Candidates(this);
     ptrCastVote =new CastVote(this);
     ptrCastedVotes = new CastedVotes(this);
