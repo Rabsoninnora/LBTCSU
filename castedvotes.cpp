@@ -40,26 +40,45 @@ void CastedVotes::setupTableView()
 
     m_model = new QStandardItemModel(this);
     m_model->setHorizontalHeaderLabels({"CandidateID", "First Name", "Last Name", "Photo", "Vote"});
-
     ui->tableView->setModel(m_model);
 
-    // Make table interactive and readable
-    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
-    ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
-    ui->tableView->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
-    ui->tableView->horizontalHeader()->setStretchLastSection(false);
-    ui->tableView->verticalHeader()->setVisible(false);
-    ui->tableView->setAlternatingRowColors(true);
-    ui->tableView->setStyleSheet("alternate-background-color: #f0f0f0; background-color: #ffffff;");
+    // Dark theme styling
+    ui->tableView->setStyleSheet(
+        "QTableView { background-color: black; color: white; gridline-color: gray; }"
+        "QHeaderView::section { background-color: #222; color: white; }"
+        );
 
-    // Bigger font and rows for thumbnails
+    // Interactive resizing
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+    ui->tableView->horizontalHeader()->setStretchLastSection(true);
+    ui->tableView->verticalHeader()->setVisible(false);
+
+    // Larger font
     QFont font = ui->tableView->font();
     font.setPointSize(12);
     ui->tableView->setFont(font);
-    ui->tableView->verticalHeader()->setDefaultSectionSize(80);
 
-    // React when a checkbox toggles
+    // Bigger row height for thumbnails
+    ui->tableView->verticalHeader()->setDefaultSectionSize(120);
+
+    // Alternating row colors
+    ui->tableView->setAlternatingRowColors(true);
+
+    // Update row height proportional to header resize (optional)
+    connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionResized,
+            this, [this](int /*logicalIndex*/, int /*oldSize*/, int newSize){
+                // Make rows taller when columns get wider (simple heuristic)
+                ui->tableView->verticalHeader()->setDefaultSectionSize(qBound(80, newSize, 200));
+                // Refresh photo icons to match new row height
+                int rh = ui->tableView->verticalHeader()->defaultSectionSize();
+                for (int r = 0; r < m_model->rowCount(); ++r) {
+                    auto *photoItem = m_model->item(r, 3);
+                    if (!photoItem) continue;
+                    // We stored only icons; to keep it simple, we won't re-scale without raw data here.
+                    // If you want perfect re-scaling, store QPixmaps per row externally and re-apply.
+                }
+            });
+
     connect(m_model, &QStandardItemModel::itemChanged, this, [this](QStandardItem *item) {
         handleVoteToggle(item);
     });
@@ -113,11 +132,11 @@ bool CastedVotes::loadVoterByID(const QString &studentID)
 
     m_currentStudentID = query.value("StudentID").toString();
 
-    const QString details = QString("ID: %1\nFirst Name: %2\nLast Name: %3\nDepartment: %4")
-                                .arg(query.value("StudentID").toString())
-                                .arg(query.value("Fname").toString())
-                                .arg(query.value("Lname").toString())
-                                .arg(query.value("Department").toString());
+    QString details = QString("ID: %1\nFirst Name: %2\nLast Name: %3\nDepartment: %4")
+                          .arg(query.value("StudentID").toString())
+                          .arg(query.value("Fname").toString())
+                          .arg(query.value("Lname").toString())
+                          .arg(query.value("Department").toString());
     ui->plainTextEdit->setPlainText(details);
 
     QByteArray imageData = query.value("Image_Data").toByteArray();
@@ -137,14 +156,13 @@ bool CastedVotes::loadVoterByID(const QString &studentID)
 
 void CastedVotes::on_btn_search_Voter_clicked()
 {
-    const QString studentID = ui->txt_Search->text().trimmed();
+    QString studentID = ui->txt_Search->text().trimmed();
     if (studentID.isEmpty()) {
         QMessageBox::warning(this, "Input Error", "Please enter a Student ID.");
         return;
     }
 
     if (loadVoterByID(studentID)) {
-        // Hide candidates until position is picked and search is done
         ui->tableView->setVisible(false);
         ui->label_Position->clear();
     }
@@ -169,27 +187,27 @@ void CastedVotes::populateCandidatesForPosition(const QString &position)
     while (query.next()) {
         QList<QStandardItem*> items;
 
-        // CandidateID
         items << new QStandardItem(query.value("CandidateID").toString());
-        // First Name
         items << new QStandardItem(query.value("Fname").toString());
-        // Last Name
         items << new QStandardItem(query.value("Lname").toString());
 
-        // Photo (thumbnail icon)
+        // Photo scaled to row height
         QStandardItem *photoItem = new QStandardItem();
         QByteArray imageData = query.value("Image_Data").toByteArray();
         if (!imageData.isEmpty()) {
             QPixmap pix;
             pix.loadFromData(imageData);
-            photoItem->setIcon(QIcon(pix.scaled(80, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation)));
+            int rowHeight = ui->tableView->verticalHeader()->defaultSectionSize();
+            photoItem->setIcon(QIcon(pix.scaled(rowHeight, rowHeight,
+                                                Qt::KeepAspectRatio,
+                                                Qt::SmoothTransformation)));
         }
         items << photoItem;
 
         // Vote checkbox
         QStandardItem *voteItem = new QStandardItem("Select");
         voteItem->setCheckable(true);
-        voteItem->setEditable(true); // allow checkbox interaction
+        voteItem->setEditable(true);
         items << voteItem;
 
         m_model->appendRow(items);
@@ -213,7 +231,7 @@ void CastedVotes::on_btn_search_Candidet_clicked()
         return;
     }
 
-    const QString position = ui->comboBox_Position->currentText().trimmed();
+    QString position = ui->comboBox_Position->currentText().trimmed();
     if (position.isEmpty() || position == "All") {
         QMessageBox::warning(this, "Input Error", "Please select a valid position.");
         return;
@@ -225,7 +243,6 @@ void CastedVotes::on_btn_search_Candidet_clicked()
 
 void CastedVotes::handleVoteToggle(QStandardItem *item)
 {
-    // Only respond to Vote column checkbox changes to Checked
     if (!item || item->column() != 4) return;
     if (item->checkState() != Qt::Checked) return;
 
@@ -235,8 +252,8 @@ void CastedVotes::handleVoteToggle(QStandardItem *item)
         return;
     }
 
-    const int row = item->row();
-    const QString candidateID = m_model->item(row, 0)->text();
+    int row = item->row();
+    QString candidateID = m_model->item(row, 0)->text();
 
     // Enforce single selection: uncheck all other rows
     m_model->blockSignals(true);
