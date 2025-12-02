@@ -11,10 +11,12 @@
 #include <QIcon>
 #include <QFont>
 #include <QByteArray>
+#include <QVariant>
 
 CastedVotes::CastedVotes(QWidget *parent)
     : QDialog(parent),
-    ui(new Ui::CastedVotes)
+    ui(new Ui::CastedVotes),
+    m_model(nullptr)
 {
     ui->setupUi(this);
     setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
@@ -22,6 +24,7 @@ CastedVotes::CastedVotes(QWidget *parent)
 
     ui->tableView->setVisible(false);
     ui->label_Position->clear();
+    ui->tableView->setIconSize(QSize(94,94)); // thumbnail size
 
     setupTableView();
 }
@@ -64,18 +67,24 @@ void CastedVotes::setupTableView()
     // Alternating row colors
     ui->tableView->setAlternatingRowColors(true);
 
-    // Update row height proportional to header resize (optional)
+    // Update row height proportional to header resize
     connect(ui->tableView->horizontalHeader(), &QHeaderView::sectionResized,
             this, [this](int /*logicalIndex*/, int /*oldSize*/, int newSize){
-                // Make rows taller when columns get wider (simple heuristic)
-                ui->tableView->verticalHeader()->setDefaultSectionSize(qBound(80, newSize, 200));
-                // Refresh photo icons to match new row height
-                int rh = ui->tableView->verticalHeader()->defaultSectionSize();
+                int rh = qBound(80, newSize, 200);
+                ui->tableView->verticalHeader()->setDefaultSectionSize(rh);
+
+                // Re-scale photos from raw pixmap stored in item data
                 for (int r = 0; r < m_model->rowCount(); ++r) {
                     auto *photoItem = m_model->item(r, 3);
                     if (!photoItem) continue;
-                    // We stored only icons; to keep it simple, we won't re-scale without raw data here.
-                    // If you want perfect re-scaling, store QPixmaps per row externally and re-apply.
+
+                    QVariant rawData = photoItem->data(Qt::UserRole + 1);
+                    if (rawData.canConvert<QPixmap>()) {
+                        QPixmap pix = rawData.value<QPixmap>();
+                        photoItem->setIcon(QIcon(pix.scaled(rh, rh,
+                                                            Qt::KeepAspectRatio,
+                                                            Qt::SmoothTransformation)));
+                    }
                 }
             });
 
@@ -197,8 +206,12 @@ void CastedVotes::populateCandidatesForPosition(const QString &position)
         if (!imageData.isEmpty()) {
             QPixmap pix;
             pix.loadFromData(imageData);
+
+            // Store raw pixmap in item data for future rescaling
+            photoItem->setData(pix, Qt::UserRole + 1);
+
             int rowHeight = ui->tableView->verticalHeader()->defaultSectionSize();
-            photoItem->setIcon(QIcon(pix.scaled(rowHeight, rowHeight,
+            photoItem->setIcon(QIcon(pix.scaled(94, 94,
                                                 Qt::KeepAspectRatio,
                                                 Qt::SmoothTransformation)));
         }
@@ -251,77 +264,4 @@ void CastedVotes::handleVoteToggle(QStandardItem *item)
         item->setCheckState(Qt::Unchecked);
         return;
     }
-
-    int row = item->row();
-    QString candidateID = m_model->item(row, 0)->text();
-
-    // Enforce single selection: uncheck all other rows
-    m_model->blockSignals(true);
-    for (int r = 0; r < m_model->rowCount(); ++r) {
-        if (r != row) {
-            if (auto *voteItem = m_model->item(r, 4)) {
-                voteItem->setCheckState(Qt::Unchecked);
-            }
-        }
-    }
-    m_model->blockSignals(false);
-
-    // Attempt to cast the vote
-    if (!castVote(m_currentStudentID, candidateID, m_currentPosition)) {
-        // Revert checkbox if insert fails
-        m_model->blockSignals(true);
-        item->setCheckState(Qt::Unchecked);
-        m_model->blockSignals(false);
-        return;
-    }
-
-    // Success feedback and lock further changes for this position
-    QMessageBox::information(this, "Vote Cast", "Your vote has been recorded.");
-
-    m_model->blockSignals(true);
-    for (int r = 0; r < m_model->rowCount(); ++r) {
-        if (auto *voteItem = m_model->item(r, 4)) {
-            voteItem->setEnabled(false);
-        }
-    }
-    m_model->blockSignals(false);
-}
-
-bool CastedVotes::castVote(const QString &studentID, const QString &candidateID, const QString &position)
-{
-    QSqlDatabase db = MyDB::getInstance()->getDBInstance();
-
-    if (!db.transaction()) {
-        QMessageBox::critical(this, "DB Error", "Failed to start transaction: " + db.lastError().text());
-        return false;
-    }
-
-    QSqlQuery voteQuery(db);
-    voteQuery.prepare("INSERT INTO VotesTotal (StudentID, CandidateID, Position) "
-                      "VALUES (:sid, :cid, :pos)");
-    voteQuery.bindValue(":sid", studentID);
-    voteQuery.bindValue(":cid", candidateID);
-    voteQuery.bindValue(":pos", position);
-
-    if (!voteQuery.exec()) {
-        db.rollback();
-        const QString err = voteQuery.lastError().text();
-
-        if (err.contains("UNIQUE", Qt::CaseInsensitive)) {
-            QMessageBox::warning(this, "Already Voted",
-                                 "You have already cast a vote for this position.");
-        } else {
-            QMessageBox::critical(this, "Vote Error",
-                                  "Failed to cast vote: " + err);
-        }
-        return false;
-    }
-
-    if (!db.commit()) {
-        db.rollback();
-        QMessageBox::critical(this, "DB Error", "Failed to commit vote: " + db.lastError().text());
-        return false;
-    }
-
-    return true;
 }
