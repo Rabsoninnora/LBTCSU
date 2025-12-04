@@ -20,6 +20,7 @@ private slots:
 private:
     MyDB *dbManager;
 
+    QLineEdit *studentIDLineEdit;
     QLineEdit *usernameLineEdit;
     QLineEdit *passwordLineEdit;
     QComboBox *roleComboBox;

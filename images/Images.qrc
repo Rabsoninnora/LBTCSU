@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/innora">
+        <file>a.jpg</file>
+        <file>as.jpg</file>
+        <file>asd.jpg</file>
+        <file>st.jpg</file>
+        <file>vote.webp</file>
+    </qresource>
+</RCC>

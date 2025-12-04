@@ -18,17 +18,6 @@ Dashboard::Dashboard(QWidget *parent)
     ptrCandidates =new Candidates();
     ptrVoters = new Voters();
 
-    //setStyleSheet("background-color: #F5F5F5;");
-    /*
-
-      ui->btn_Dashboard_logout->setStyleSheet("background-color: #2980b9; color: white; padding: 6px;");
-      ui->btn_Add_candidate->setStyleSheet("background-color: #2980b9; color: white; padding: 6px;");
-      ui->btn_cadidates_records->setStyleSheet("background-color: #2980b9; color: white; padding: 6px;");
-      ui->btn_view_edit_candidate->setStyleSheet("background-color: #2980b9; color: white; padding: 6px;");
-      ui->btn_voter_records->setStyleSheet("background-color: #2980b9; color: white; padding: 6px;");
-
-*/
-
 
 
 

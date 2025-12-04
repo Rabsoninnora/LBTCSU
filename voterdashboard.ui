@@ -96,13 +96,14 @@ QPushButton{
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>132</y>
+     <y>92</y>
      <width>1181</width>
-     <height>741</height>
+     <height>781</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #2980b9;</string>
+    <string notr="true">background-color: #2980b9;
+background-image: url(:/vote.webp);</string>
    </property>
    <property name="text">
     <string/>
@@ -220,7 +221,6 @@ QPushButton{
     <string>View Results</string>
    </property>
   </widget>
-  <zorder>pushButton</zorder>
   <zorder>Side_Nav</zorder>
   <zorder>btn_logout</zorder>
   <zorder>BodyLabel</zorder>
@@ -228,6 +228,7 @@ QPushButton{
   <zorder>btn_AccountView</zorder>
   <zorder>btn_CastVote</zorder>
   <zorder>btn_ResultsView</zorder>
+  <zorder>pushButton</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -59,7 +59,7 @@ public:
 " "));
         btn_Dashboard_logout = new QPushButton(Dashboard);
         btn_Dashboard_logout->setObjectName("btn_Dashboard_logout");
-        btn_Dashboard_logout->setGeometry(QRect(1150, 30, 101, 41));
+        btn_Dashboard_logout->setGeometry(QRect(1140, 40, 101, 41));
         btn_Dashboard_logout->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -140,7 +140,10 @@ public:
         BodyLabel = new QLabel(Dashboard);
         BodyLabel->setObjectName("BodyLabel");
         BodyLabel->setGeometry(QRect(220, 110, 1161, 763));
-        BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
+        BodyLabel->setStyleSheet(QString::fromUtf8("QLabel{ \n"
+"image: url(:/new/innora/asd.jpg);\n"
+"\n"
+"}"));
         btn_voter_account = new QPushButton(Dashboard);
         btn_voter_account->setObjectName("btn_voter_account");
         btn_voter_account->setGeometry(QRect(10, 460, 181, 41));

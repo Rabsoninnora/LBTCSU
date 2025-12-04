@@ -77,8 +77,9 @@ public:
 " "));
         BodyLabel = new QLabel(VoterDashboard);
         BodyLabel->setObjectName("BodyLabel");
-        BodyLabel->setGeometry(QRect(220, 132, 1181, 741));
-        BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
+        BodyLabel->setGeometry(QRect(220, 92, 1181, 781));
+        BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;\n"
+"background-image: url(:/vote.webp);"));
         btn_view_candidate = new QPushButton(VoterDashboard);
         btn_view_candidate->setObjectName("btn_view_candidate");
         btn_view_candidate->setGeometry(QRect(20, 300, 181, 41));
@@ -143,7 +144,6 @@ public:
 "}\n"
 "\n"
 " "));
-        pushButton->raise();
         Side_Nav->raise();
         btn_logout->raise();
         BodyLabel->raise();
@@ -151,6 +151,7 @@ public:
         btn_AccountView->raise();
         btn_CastVote->raise();
         btn_ResultsView->raise();
+        pushButton->raise();
 
         retranslateUi(VoterDashboard);
 

@@ -22,6 +22,9 @@ RegisterVoter::RegisterVoter(QWidget *parent)
     dbManager = MyDB::getInstance();
 
     // Create widgets
+    QLabel *StudentIDLabel = new QLabel ("StudentID");
+    studentIDLineEdit = new QLineEdit(this);
+
     QLabel *usernameLabel = new QLabel("Username:");
     usernameLineEdit = new QLineEdit(this);
 
@@ -32,7 +35,7 @@ RegisterVoter::RegisterVoter(QWidget *parent)
     QLabel *roleLabel = new QLabel("Role:");
     roleComboBox = new QComboBox(this);
     roleComboBox->addItem("Candident");
-    roleComboBox->addItem("Student");
+    roleComboBox->addItem("Voter");
 
     registerButton = new QPushButton("Submit", this);
     cancelButton = new QPushButton("Cancel", this);
@@ -42,6 +45,7 @@ RegisterVoter::RegisterVoter(QWidget *parent)
 
     // Layout setup
     QFormLayout *formLayout = new QFormLayout();
+    formLayout->addRow(StudentIDLabel, studentIDLineEdit);
     formLayout->addRow(usernameLabel, usernameLineEdit);
     formLayout->addRow(passwordLabel, passwordLineEdit);
     formLayout->addRow(roleLabel, roleComboBox);
@@ -69,9 +73,10 @@ RegisterVoter::~RegisterVoter()
 
 void RegisterVoter::on_registerButton_clicked()
 {
+    QString StudentID = studentIDLineEdit->text().trimmed();
     QString username = usernameLineEdit->text().trimmed();
-    QString password = passwordLineEdit->text();
-    QString role = roleComboBox->currentText();
+    QString password = passwordLineEdit->text().trimmed();
+    QString role = roleComboBox->currentText().trimmed();
 
     if (username.isEmpty() || password.isEmpty()) {
         messageLabel->setText("Please fill all fields.");
@@ -83,7 +88,8 @@ void RegisterVoter::on_registerButton_clicked()
 
     QSqlDatabase db = dbManager->getDBInstance();
     QSqlQuery query(db);
-    query.prepare("INSERT INTO AdminDetails (username, password) VALUES (username:username, password:password)");
+    query.prepare("INSERT INTO UserLogin (StudentID, username, password, role) VALUES (StudentID:StudentID, username:username, password:password, role:role)");
+    query.addBindValue(StudentID);
     query.addBindValue(username);
     query.addBindValue(hashedPassword);
     query.addBindValue(role);
