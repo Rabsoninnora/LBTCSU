@@ -43,7 +43,7 @@ QPushButton{
     <string> LBTCSU VOTING  SYSTEM</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_Candidate_back">
+  <widget class="QPushButton" name="btn_Voter_back">
    <property name="geometry">
     <rect>
      <x>1260</x>
@@ -158,9 +158,9 @@ QComboBox {
    <widget class="QPushButton" name="btn_search_voter">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>10</y>
-      <width>111</width>
+      <x>600</x>
+      <y>40</y>
+      <width>131</width>
       <height>41</height>
      </rect>
     </property>
@@ -196,9 +196,9 @@ QPushButton{
    <widget class="QLineEdit" name="txt_Search_Voter">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>491</width>
+      <x>290</x>
+      <y>40</y>
+      <width>291</width>
       <height>41</height>
      </rect>
     </property>
@@ -228,14 +228,14 @@ QLineEdit{
      <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <property name="placeholderText">
-     <string>Enter Student ID | Valid Search Query</string>
+     <string>Enter Search Query</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_voter_view">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>10</y>
+      <x>750</x>
+      <y>40</y>
       <width>171</width>
       <height>41</height>
      </rect>
@@ -269,44 +269,13 @@ QPushButton{
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_Reset_Voter">
-    <property name="geometry">
-     <rect>
-      <x>830</x>
-      <y>10</y>
-      <width>111</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">   
-QPushButton{
-                    color: rgb(255, 255, 255);
-                    border:2px solid green;
-                    border-radius: 8px;
-                    padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
-                    font: 500 11pt ;
-                   
-
-}
-
- </string>
-    </property>
-    <property name="text">
-     <string>Reset</string>
-    </property>
-    <property name="icon">
-     <iconset theme="QIcon::ThemeIcon::ViewRestore"/>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="tableWidget_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>61</y>
-      <width>941</width>
-      <height>481</height>
+      <x>290</x>
+      <y>110</y>
+      <width>631</width>
+      <height>411</height>
      </rect>
     </property>
     <column>
@@ -340,6 +309,37 @@ QPushButton{
      </property>
     </column>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_Reset_Voter">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>140</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">   
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ViewRestore"/>
+   </property>
   </widget>
  </widget>
  <resources/>

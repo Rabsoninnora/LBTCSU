@@ -25,14 +25,14 @@ class Ui_VoterRecords
 {
 public:
     QPushButton *pushButton_2;
-    QPushButton *btn_Candidate_back;
+    QPushButton *btn_Voter_back;
     QPushButton *StudentRegistration_2;
     QFrame *frame_2;
     QPushButton *btn_search_voter;
     QLineEdit *txt_Search_Voter;
     QPushButton *btn_voter_view;
-    QPushButton *btn_Reset_Voter;
     QTableWidget *tableWidget_2;
+    QPushButton *btn_Reset_Voter;
 
     void setupUi(QDialog *VoterRecords)
     {
@@ -55,10 +55,10 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Candidate_back = new QPushButton(VoterRecords);
-        btn_Candidate_back->setObjectName("btn_Candidate_back");
-        btn_Candidate_back->setGeometry(QRect(1260, 50, 91, 41));
-        btn_Candidate_back->setStyleSheet(QString::fromUtf8("    \n"
+        btn_Voter_back = new QPushButton(VoterRecords);
+        btn_Voter_back->setObjectName("btn_Voter_back");
+        btn_Voter_back->setGeometry(QRect(1260, 50, 91, 41));
+        btn_Voter_back->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid green;\n"
@@ -72,7 +72,7 @@ public:
 "\n"
 " "));
         QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::GoHome));
-        btn_Candidate_back->setIcon(icon);
+        btn_Voter_back->setIcon(icon);
         StudentRegistration_2 = new QPushButton(VoterRecords);
         StudentRegistration_2->setObjectName("StudentRegistration_2");
         StudentRegistration_2->setGeometry(QRect(330, 140, 641, 41));
@@ -132,7 +132,7 @@ public:
         frame_2->setFrameShadow(QFrame::Shadow::Raised);
         btn_search_voter = new QPushButton(frame_2);
         btn_search_voter->setObjectName("btn_search_voter");
-        btn_search_voter->setGeometry(QRect(520, 10, 111, 41));
+        btn_search_voter->setGeometry(QRect(600, 40, 131, 41));
         QFont font;
         font.setPointSize(11);
         font.setWeight(QFont::Medium);
@@ -154,7 +154,7 @@ public:
         btn_search_voter->setCheckable(true);
         txt_Search_Voter = new QLineEdit(frame_2);
         txt_Search_Voter->setObjectName("txt_Search_Voter");
-        txt_Search_Voter->setGeometry(QRect(20, 10, 491, 41));
+        txt_Search_Voter->setGeometry(QRect(290, 40, 291, 41));
         txt_Search_Voter->setFont(font);
         txt_Search_Voter->setStyleSheet(QString::fromUtf8("    \n"
 "QLineEdit{\n"
@@ -172,7 +172,7 @@ public:
         txt_Search_Voter->setAlignment(Qt::AlignmentFlag::AlignCenter);
         btn_voter_view = new QPushButton(frame_2);
         btn_voter_view->setObjectName("btn_voter_view");
-        btn_voter_view->setGeometry(QRect(650, 10, 171, 41));
+        btn_voter_view->setGeometry(QRect(750, 40, 171, 41));
         btn_voter_view->setFont(font);
         btn_voter_view->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
@@ -188,24 +188,6 @@ public:
 "\n"
 " "));
         btn_voter_view->setCheckable(true);
-        btn_Reset_Voter = new QPushButton(frame_2);
-        btn_Reset_Voter->setObjectName("btn_Reset_Voter");
-        btn_Reset_Voter->setGeometry(QRect(830, 10, 111, 41));
-        btn_Reset_Voter->setStyleSheet(QString::fromUtf8("   \n"
-"QPushButton{\n"
-"                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
-"                    border-radius: 8px;\n"
-"                    padding: 0 8px;\n"
-"                    background-color: rgb(255, 267, 245);\n"
-"                    font: 500 11pt ;\n"
-"                   \n"
-"\n"
-"}\n"
-"\n"
-" "));
-        QIcon icon1(QIcon::fromTheme(QIcon::ThemeIcon::ViewRestore));
-        btn_Reset_Voter->setIcon(icon1);
         tableWidget_2 = new QTableWidget(frame_2);
         if (tableWidget_2->columnCount() < 6)
             tableWidget_2->setColumnCount(6);
@@ -222,7 +204,25 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         tableWidget_2->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         tableWidget_2->setObjectName("tableWidget_2");
-        tableWidget_2->setGeometry(QRect(20, 61, 941, 481));
+        tableWidget_2->setGeometry(QRect(290, 110, 631, 411));
+        btn_Reset_Voter = new QPushButton(VoterRecords);
+        btn_Reset_Voter->setObjectName("btn_Reset_Voter");
+        btn_Reset_Voter->setGeometry(QRect(990, 140, 111, 41));
+        btn_Reset_Voter->setStyleSheet(QString::fromUtf8("   \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        QIcon icon1(QIcon::fromTheme(QIcon::ThemeIcon::ViewRestore));
+        btn_Reset_Voter->setIcon(icon1);
 
         retranslateUi(VoterRecords);
 
@@ -233,12 +233,11 @@ public:
     {
         VoterRecords->setWindowTitle(QCoreApplication::translate("VoterRecords", "Dialog", nullptr));
         pushButton_2->setText(QCoreApplication::translate("VoterRecords", " LBTCSU VOTING  SYSTEM", nullptr));
-        btn_Candidate_back->setText(QCoreApplication::translate("VoterRecords", "Back", nullptr));
+        btn_Voter_back->setText(QCoreApplication::translate("VoterRecords", "Back", nullptr));
         StudentRegistration_2->setText(QCoreApplication::translate("VoterRecords", "SEARCH VOTER RECORD", nullptr));
         btn_search_voter->setText(QCoreApplication::translate("VoterRecords", "Search", nullptr));
-        txt_Search_Voter->setPlaceholderText(QCoreApplication::translate("VoterRecords", "Enter Student ID | Valid Search Query", nullptr));
+        txt_Search_Voter->setPlaceholderText(QCoreApplication::translate("VoterRecords", "Enter Search Query", nullptr));
         btn_voter_view->setText(QCoreApplication::translate("VoterRecords", "View All Records", nullptr));
-        btn_Reset_Voter->setText(QCoreApplication::translate("VoterRecords", "Reset", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget_2->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("VoterRecords", "StudentID", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget_2->horizontalHeaderItem(1);
@@ -251,6 +250,7 @@ public:
         ___qtablewidgetitem4->setText(QCoreApplication::translate("VoterRecords", "ImageData", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget_2->horizontalHeaderItem(5);
         ___qtablewidgetitem5->setText(QCoreApplication::translate("VoterRecords", "ImageName", nullptr));
+        btn_Reset_Voter->setText(QCoreApplication::translate("VoterRecords", "Reset", nullptr));
     } // retranslateUi
 
 };
