@@ -8,4 +8,5 @@
 #include "EWIEGA46WW/moc_registervoter.cpp"
 #include "EWIEGA46WW/moc_useraddmin.cpp"
 #include "EWIEGA46WW/moc_voterdashboard.cpp"
+#include "EWIEGA46WW/moc_voterrecords.cpp"
 #include "EWIEGA46WW/moc_voters.cpp"

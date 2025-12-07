@@ -17,6 +17,7 @@ Dashboard::Dashboard(QWidget *parent)
     ptrRegisterVoter = new RegisterVoter();
     ptrCandidates =new Candidates();
     ptrVoters = new Voters();
+    ptrVoterRecords =new VoterRecords(this);
 
 
 
@@ -31,6 +32,7 @@ Dashboard::~Dashboard()
     delete ptrRegisterCandidate;
     delete ptrVoters;
     delete ptrRegisterVoter;
+    delete ptrVoterRecords;
 }
 
 
@@ -66,6 +68,6 @@ void Dashboard::on_btn_voter_account_clicked()
 
 void Dashboard::on_btn_voter_records_clicked()
 {
-
+     ptrVoterRecords->show();
 }
 

@@ -99,7 +99,10 @@ void RegisterVoter::on_registerButton_clicked()
         this->accept();
     } else {
         messageLabel->setText("Failed Account not created: " + query.lastError().text());
+
     }
+
+
 }
 
 void RegisterVoter::on_cancelButton_clicked()

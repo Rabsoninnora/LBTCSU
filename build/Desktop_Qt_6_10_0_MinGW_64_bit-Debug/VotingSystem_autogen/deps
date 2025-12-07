@@ -765,6 +765,8 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/useraddmin.h \
 	C:/VoltingSystem/VotingSystem/voterdashboard.cpp \
 	C:/VoltingSystem/VotingSystem/voterdashboard.h \
+	C:/VoltingSystem/VotingSystem/voterrecords.cpp \
+	C:/VoltingSystem/VotingSystem/voterrecords.h \
 	C:/VoltingSystem/VotingSystem/voters.cpp \
 	C:/VoltingSystem/VotingSystem/voters.h \
 	C:/VoltingSystem/VotingSystem/candidates.ui \
@@ -774,5 +776,6 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/mainwindow.ui \
 	C:/VoltingSystem/VotingSystem/registercandidate.ui \
 	C:/VoltingSystem/VotingSystem/voterdashboard.ui \
+	C:/VoltingSystem/VotingSystem/voterrecords.ui \
 	C:/VoltingSystem/VotingSystem/voters.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

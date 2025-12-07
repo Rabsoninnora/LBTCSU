@@ -424,6 +424,12 @@
 			null
 		],
 		[
+			"C:/VoltingSystem/VotingSystem/voterrecords.h",
+			"MU",
+			"EWIEGA46WW/moc_voterrecords.cpp",
+			null
+		],
+		[
 			"C:/VoltingSystem/VotingSystem/voters.h",
 			"MU",
 			"EWIEGA46WW/moc_voters.cpp",
@@ -513,6 +519,7 @@
 		[ "C:/VoltingSystem/VotingSystem/registervoter.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/useraddmin.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/voterdashboard.cpp", "MU", null ],
+		[ "C:/VoltingSystem/VotingSystem/voterrecords.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/voters.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

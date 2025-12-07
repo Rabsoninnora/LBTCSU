@@ -10,6 +10,7 @@
 #include "candidates.h"
 #include "voters.h"
 #include "registervoter.h"
+#include "voterrecords.h"
 namespace Ui {
 class Dashboard;
 }
@@ -44,6 +45,7 @@ private:
     Candidates  *ptrCandidates;
     Voters      *ptrVoters;
     RegisterVoter *ptrRegisterVoter;
+    VoterRecords *ptrVoterRecords;
 
 };
 
