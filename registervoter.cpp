@@ -88,11 +88,12 @@ void RegisterVoter::on_registerButton_clicked()
 
     QSqlDatabase db = dbManager->getDBInstance();
     QSqlQuery query(db);
-    query.prepare("INSERT INTO UserLogin (StudentID, username, password, role) VALUES (StudentID:StudentID, username:username, password:password, role:role)");
-    query.addBindValue(StudentID);
-    query.addBindValue(username);
-    query.addBindValue(hashedPassword);
-    query.addBindValue(role);
+    query.prepare("INSERT INTO UserLogin (StudentID, username, password, role) VALUES (:StudentID, :username, :password, :role)");
+    query.bindValue(":StudentID", StudentID);
+    query.bindValue(":username", username);
+    query.bindValue(":password", hashedPassword);
+    query.bindValue(":role", role);
+
 
     if (query.exec()) {
         QMessageBox::information(this, "Success", "Account created!");

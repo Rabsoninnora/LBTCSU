@@ -258,6 +258,34 @@ QPushButton{
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btn_ResultsView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+   </property>
+   <property name="text">
+    <string>View Results</string>
+   </property>
+  </widget>
   <zorder>Side_Nav</zorder>
   <zorder>pushButton</zorder>
   <zorder>btn_Dashboard_logout</zorder>
@@ -267,6 +295,7 @@ QPushButton{
   <zorder>btn_voter_records</zorder>
   <zorder>BodyLabel</zorder>
   <zorder>btn_voter_account</zorder>
+  <zorder>btn_ResultsView</zorder>
  </widget>
  <resources/>
  <connections/>

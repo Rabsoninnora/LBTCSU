@@ -11,6 +11,7 @@
 #include "voters.h"
 #include "registervoter.h"
 #include "voterrecords.h"
+#include "viewresults.h"
 namespace Ui {
 class Dashboard;
 }
@@ -40,6 +41,8 @@ private slots:
 
     void on_btn_voter_records_clicked();
 
+    void on_btn_ResultsView_clicked();
+
 private:
     QLabel *headerLabel;
     Ui::Dashboard *ui;
@@ -48,6 +51,7 @@ private:
     Voters      *ptrVoters;
     RegisterVoter *ptrRegisterVoter;
     VoterRecords *ptrVoterRecords;
+    ViewResults  *ptrViewResults;
 
 };
 

@@ -26,7 +26,8 @@ qt_add_executable(VotingSystem
     castedvotes.h castedvotes.cpp castedvotes.ui
 
     voterrecords.h voterrecords.cpp voterrecords.ui
-    images/images.qrc
+    viewresults.h viewresults.cpp viewresults.ui
+
 
 
 

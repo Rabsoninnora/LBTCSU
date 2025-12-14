@@ -60,9 +60,9 @@ UserAddmin::UserAddmin(QWidget *parent)
 
 void UserAddmin::handleSubmit()
 {
-    QString username = usernameLineEdit->text();
-    QString password = passwordLineEdit->text();
-    QString role = roleComboBox->currentText();
+    QString username = usernameLineEdit->text().trimmed();
+    QString password = passwordLineEdit->text().trimmed();
+    QString role = roleComboBox->currentText().trimmed();
 
     if (username.isEmpty() || password.isEmpty() || role.isEmpty()) {
         QMessageBox::warning(this, "Missing Info", "Please fill in all fields.");

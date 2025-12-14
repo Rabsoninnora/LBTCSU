@@ -418,6 +418,12 @@
 			null
 		],
 		[
+			"C:/VoltingSystem/VotingSystem/viewresults.h",
+			"MU",
+			"EWIEGA46WW/moc_viewresults.cpp",
+			null
+		],
+		[
 			"C:/VoltingSystem/VotingSystem/voterdashboard.h",
 			"MU",
 			"EWIEGA46WW/moc_voterdashboard.cpp",
@@ -518,6 +524,7 @@
 		[ "C:/VoltingSystem/VotingSystem/registercandidate.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/registervoter.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/useraddmin.cpp", "MU", null ],
+		[ "C:/VoltingSystem/VotingSystem/viewresults.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/voterdashboard.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/voterrecords.cpp", "MU", null ],
 		[ "C:/VoltingSystem/VotingSystem/voters.cpp", "MU", null ]
