@@ -22,6 +22,8 @@ class Dashboard : public QDialog
 public:
     explicit Dashboard(QWidget *parent = nullptr);
     ~Dashboard();
+protected:
+    void resizeEvent(QResizeEvent *event) override;
 
 private slots:
 

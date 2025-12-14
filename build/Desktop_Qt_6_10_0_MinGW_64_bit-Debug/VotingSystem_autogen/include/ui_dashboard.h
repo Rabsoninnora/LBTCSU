@@ -140,10 +140,12 @@ public:
         BodyLabel = new QLabel(Dashboard);
         BodyLabel->setObjectName("BodyLabel");
         BodyLabel->setGeometry(QRect(220, 110, 1161, 763));
-        BodyLabel->setStyleSheet(QString::fromUtf8("QLabel{ \n"
-"image: url(:/new/innora/asd.jpg);\n"
+        BodyLabel->setStyleSheet(QString::fromUtf8("\n"
+"	image: url(:/st.jpg);\n"
 "\n"
-"}"));
+"\n"
+"\n"
+""));
         btn_voter_account = new QPushButton(Dashboard);
         btn_voter_account->setObjectName("btn_voter_account");
         btn_voter_account->setGeometry(QRect(10, 460, 181, 41));

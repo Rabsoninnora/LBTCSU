@@ -199,10 +199,12 @@ QPushButton{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QLabel{ 
-image: url(:/new/innora/asd.jpg);
+    <string notr="true">
+	image: url(:/st.jpg);
 
-}</string>
+
+
+</string>
    </property>
    <property name="text">
     <string/>

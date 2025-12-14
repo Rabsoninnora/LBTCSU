@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 42,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 33,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
@@ -389,18 +389,18 @@
 				26,
 				29,
 				32,
-				36
+				35
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "VotingSystem_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "VotingSystem_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "VotingSystem_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "VotingSystem::@6890427a1f51a3e7e1df",
@@ -516,6 +516,7 @@
 			"sourceIndexes" : 
 			[
 				0,
+				37,
 				38,
 				39,
 				40,
@@ -526,8 +527,7 @@
 				45,
 				46,
 				47,
-				48,
-				49
+				48
 			]
 		},
 		{
@@ -546,7 +546,7 @@
 				26,
 				29,
 				32,
-				36
+				35
 			]
 		},
 		{
@@ -564,7 +564,7 @@
 				25,
 				28,
 				31,
-				35
+				34
 			]
 		},
 		{
@@ -581,21 +581,14 @@
 				27,
 				30,
 				33,
-				37
-			]
-		},
-		{
-			"name" : "Resources",
-			"sourceIndexes" : 
-			[
-				34
+				36
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				50
+				49
 			]
 		}
 	],
@@ -787,11 +780,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "images/Images.qrc",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 4,
 			"path" : "voterrecords.h",
 			"sourceGroupIndex" : 2
 		},
@@ -882,7 +870,7 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/VotingSystem_autogen/timestamp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		}
 	],
 	"type" : "EXECUTABLE"

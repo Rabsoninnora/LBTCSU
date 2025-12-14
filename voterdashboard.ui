@@ -103,7 +103,8 @@ QPushButton{
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: #2980b9;
-background-image: url(:/vote.webp);</string>
+image: url(:/vote.webp);
+</string>
    </property>
    <property name="text">
     <string/>

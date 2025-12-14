@@ -79,7 +79,8 @@ public:
         BodyLabel->setObjectName("BodyLabel");
         BodyLabel->setGeometry(QRect(220, 92, 1181, 781));
         BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;\n"
-"background-image: url(:/vote.webp);"));
+"image: url(:/vote.webp);\n"
+""));
         btn_view_candidate = new QPushButton(VoterDashboard);
         btn_view_candidate->setObjectName("btn_view_candidate");
         btn_view_candidate->setGeometry(QRect(20, 300, 181, 41));
