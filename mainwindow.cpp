@@ -60,7 +60,7 @@ MainWindow::MainWindow(QWidget *parent)
     QLabel *BodyLabel = new QLabel(" ", this);
     BodyLabel->setStyleSheet("background-color: rgb(81, 81, 121);");
     BodyLabel->setAlignment(Qt::AlignTop);
-    QPixmap bodyLabelPixmap("C:/VoltingSystem/elections_12.jpg");
+    QPixmap bodyLabelPixmap("C:/VoltingSystem/VotingSystem/images/perfect.png");
     BodyLabel->setPixmap(bodyLabelPixmap.scaled(size(), Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation));
     BodyLabel->setScaledContents(true);
     BodyLabel->setAttribute(Qt::WA_TransparentForMouseEvents);

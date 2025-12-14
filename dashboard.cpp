@@ -16,7 +16,7 @@ Dashboard::Dashboard(QWidget *parent)
    // setFixedSize(1270, 667);
     ui->setupUi(this);
     // Load image from your folder
-    QString imagePath = "C:/VoltingSystem/VotingSystem/images/st.jpg";
+    QString imagePath = "C:/VoltingSystem/VotingSystem/images/perfect.png";
     QPixmap pixmap(imagePath);
 
     if (!pixmap.isNull()) {
@@ -39,7 +39,7 @@ Dashboard::Dashboard(QWidget *parent)
 void Dashboard::resizeEvent(QResizeEvent *event)
 {
     QDialog::resizeEvent(event);
-    QPixmap pixmap("C:/VoltingSystem/VotingSystem/images/st.jpg");
+    QPixmap pixmap("C:/VoltingSystem/VotingSystem/images/perfect.png");
     if (!pixmap.isNull()) {
         ui->BodyLabel->setPixmap(pixmap.scaled(ui->BodyLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
     }

@@ -19,6 +19,9 @@ public:
     explicit VoterDashboard(QWidget *parent = nullptr);
     ~VoterDashboard();
 
+protected:
+    void resizeEvent(QResizeEvent *event) override;
+
 private slots:
     void on_btn_logout_clicked();
 

@@ -16,6 +16,7 @@ public:
     explicit Voters(QWidget *parent = nullptr);
     ~Voters();
 
+
 private slots:
     void on_btn_RegisterVoter_back_clicked();
 

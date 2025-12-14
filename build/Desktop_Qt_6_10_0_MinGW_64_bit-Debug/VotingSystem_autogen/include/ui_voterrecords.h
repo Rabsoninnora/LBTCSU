@@ -204,7 +204,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         tableWidget_2->setHorizontalHeaderItem(5, __qtablewidgetitem5);
         tableWidget_2->setObjectName("tableWidget_2");
-        tableWidget_2->setGeometry(QRect(290, 110, 631, 411));
+        tableWidget_2->setGeometry(QRect(110, 110, 951, 411));
         btn_Reset_Voter = new QPushButton(VoterRecords);
         btn_Reset_Voter->setObjectName("btn_Reset_Voter");
         btn_Reset_Voter->setGeometry(QRect(990, 140, 111, 41));

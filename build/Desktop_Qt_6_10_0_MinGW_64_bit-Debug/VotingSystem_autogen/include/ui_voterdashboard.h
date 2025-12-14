@@ -61,7 +61,7 @@ public:
 " "));
         btn_logout = new QPushButton(VoterDashboard);
         btn_logout->setObjectName("btn_logout");
-        btn_logout->setGeometry(QRect(1260, 40, 101, 41));
+        btn_logout->setGeometry(QRect(1200, 40, 101, 41));
         btn_logout->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -77,10 +77,8 @@ public:
 " "));
         BodyLabel = new QLabel(VoterDashboard);
         BodyLabel->setObjectName("BodyLabel");
-        BodyLabel->setGeometry(QRect(220, 92, 1181, 781));
-        BodyLabel->setStyleSheet(QString::fromUtf8("background-color: #2980b9;\n"
-"image: url(:/vote.webp);\n"
-""));
+        BodyLabel->setGeometry(QRect(220, 112, 1181, 761));
+        BodyLabel->setStyleSheet(QString::fromUtf8(""));
         btn_view_candidate = new QPushButton(VoterDashboard);
         btn_view_candidate->setObjectName("btn_view_candidate");
         btn_view_candidate->setGeometry(QRect(20, 300, 181, 41));
@@ -146,13 +144,13 @@ public:
 "\n"
 " "));
         Side_Nav->raise();
-        btn_logout->raise();
         BodyLabel->raise();
         btn_view_candidate->raise();
         btn_AccountView->raise();
         btn_CastVote->raise();
         btn_ResultsView->raise();
         pushButton->raise();
+        btn_logout->raise();
 
         retranslateUi(VoterDashboard);
 

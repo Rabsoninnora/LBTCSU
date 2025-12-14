@@ -12,15 +12,33 @@
 #include <QDebug>
 #include <QPlainTextEdit>
 #include <QLineEdit>
+#include "QLabel"
+#include "QFrame"
+#include "QPixmap"
+#include "QPalette"
+#include <QPixmap>
+#include <QDir>
 
 RegisterCandidate::RegisterCandidate(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::RegisterCandidate)
 {
     ui->setupUi(this);
+
     setWindowFlags(windowFlags()|Qt::WindowStaysOnTopHint);
     setWindowTitle("v1.0");
+
+    // Set background image for the whole QDialog
+    this->setStyleSheet("QDialog { "
+                        "background-image: url('C:/VoltingSystem/VotingSystem/images/perfect.png'); "
+                        "background-repeat: no-repeat; "
+                        "background-position: center; "
+                        "background-attachment: fixed; "
+                        "}");
 }
+
+
+
 
 RegisterCandidate::~RegisterCandidate()
 {

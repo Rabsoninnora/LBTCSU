@@ -17,6 +17,7 @@ public:
     explicit Candidates(QWidget *parent = nullptr);
     ~Candidates();
 
+
 private slots:
     void on_btn_Candidate_back_clicked();
 

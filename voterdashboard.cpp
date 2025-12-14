@@ -7,16 +7,31 @@ VoterDashboard::VoterDashboard(QWidget *parent) :
     ui(new Ui::VoterDashboard)
 {
     ui->setupUi(this);
-    QPixmap bg(":C:/VoltingSystem/VotingSystem/st.jpg");
-    ui->BodyLabel->setPixmap(bg.scaled(ui->BodyLabel->size(),
-                                       Qt::KeepAspectRatioByExpanding,
-                                       Qt::SmoothTransformation));
-    ui->BodyLabel->setScaledContents(true); // ensures it fills the label
+
+    // Load image from your folder
+    QString imagePath = "C:/VoltingSystem/VotingSystem/images/perfect.png";
+    QPixmap pixmap(imagePath);
+
+    if (!pixmap.isNull()) {
+        ui->BodyLabel->setPixmap(pixmap.scaled(ui->BodyLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    } else {
+        qDebug() << "Image not found at:" << imagePath;
+    }
+
 
     ptrCandidates =new Candidates(this);
     ptrCastVote =new CastVote(this);
     ptrCastedVotes = new CastedVotes(this);
 
+}
+
+void VoterDashboard::resizeEvent(QResizeEvent *event)
+{
+    QDialog::resizeEvent(event);
+    QPixmap pixmap("C:/VoltingSystem/VotingSystem/images/perfect.png");
+    if (!pixmap.isNull()) {
+        ui->BodyLabel->setPixmap(pixmap.scaled(ui->BodyLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    }
 }
 
 VoterDashboard::~VoterDashboard()

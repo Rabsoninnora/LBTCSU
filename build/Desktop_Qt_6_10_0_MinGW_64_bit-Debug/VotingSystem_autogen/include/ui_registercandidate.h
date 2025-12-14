@@ -49,7 +49,7 @@ public:
         RegisterCandidate->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
         frame = new QFrame(RegisterCandidate);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(80, 140, 1011, 521));
+        frame->setGeometry(QRect(80, 140, 991, 521));
         frame->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 85, 127);"));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
         frame->setFrameShadow(QFrame::Shadow::Raised);

@@ -13,6 +13,7 @@ public:
     explicit RegisterVoter(QWidget *parent = nullptr);
     ~RegisterVoter();
 
+
 private slots:
     void on_registerButton_clicked();
     void on_cancelButton_clicked();

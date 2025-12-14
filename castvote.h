@@ -16,6 +16,7 @@ public:
     explicit CastVote(QWidget *parent = nullptr);
     ~CastVote();
 
+
 private slots:
     void on_btnSearchVoter_clicked();
     void on_btnSearchCandidate_clicked();

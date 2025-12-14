@@ -67,7 +67,7 @@ QPushButton{
   <widget class="QPushButton" name="btn_logout">
    <property name="geometry">
     <rect>
-     <x>1260</x>
+     <x>1200</x>
      <y>40</y>
      <width>101</width>
      <height>41</height>
@@ -96,15 +96,13 @@ QPushButton{
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>92</y>
+     <y>112</y>
      <width>1181</width>
-     <height>781</height>
+     <height>761</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #2980b9;
-image: url(:/vote.webp);
-</string>
+    <string notr="true"> </string>
    </property>
    <property name="text">
     <string/>
@@ -223,13 +221,13 @@ QPushButton{
    </property>
   </widget>
   <zorder>Side_Nav</zorder>
-  <zorder>btn_logout</zorder>
   <zorder>BodyLabel</zorder>
   <zorder>btn_view_candidate</zorder>
   <zorder>btn_AccountView</zorder>
   <zorder>btn_CastVote</zorder>
   <zorder>btn_ResultsView</zorder>
   <zorder>pushButton</zorder>
+  <zorder>btn_logout</zorder>
  </widget>
  <resources/>
  <connections/>

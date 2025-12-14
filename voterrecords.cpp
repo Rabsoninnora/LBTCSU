@@ -16,6 +16,13 @@ VoterRecords::VoterRecords(QWidget *parent)
 
     setWindowFlags(windowFlags()|Qt::WindowStaysOnTopHint);
     setWindowTitle("v1.0");
+    // Set background image for the whole QDialog
+    this->setStyleSheet("QDialog { "
+                        "background-image: url('C:/VoltingSystem/VotingSystem/images/perfect.png'); "
+                        "background-repeat: no-repeat; "
+                        "background-position: center; "
+                        "background-attachment: fixed; "
+                        "}");
 
     ui->tableWidget_2->setVisible(false); // hide table initially
     ui->tableWidget_2->setIconSize(QSize(64,64)); // thumbnail size
@@ -31,6 +38,7 @@ void VoterRecords::on_btn_Reset_Voter_clicked()
     ui->txt_Search_Voter->clear();
     ui->tableWidget_2->clear();
     ui->tableWidget_2->setVisible(false);
+    ui->frame_2->setVisible(false);
 
 }
 

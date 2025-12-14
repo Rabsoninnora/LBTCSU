@@ -16,6 +16,7 @@ public:
     explicit RegisterCandidate(QWidget *parent = nullptr);
     ~RegisterCandidate();
 
+
 private slots:
     void on_btn_RegisterCandidate_back_clicked();
 

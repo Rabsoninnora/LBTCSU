@@ -25,6 +25,7 @@ public:
     explicit CastedVotes(QWidget *parent = nullptr);
     ~CastedVotes();
 
+
 private slots:
     void on_btn_back_clicked();
     void on_btn_Reset_clicked();

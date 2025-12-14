@@ -18,6 +18,17 @@ Candidates::Candidates(QWidget *parent)
 
     ui->tableWidget->setVisible(false); // hide table initially
     ui->tableWidget->setIconSize(QSize(64,64)); // thumbnail size
+
+    ////////////
+    // Set background image for the whole QDialog
+    this->setStyleSheet("QDialog { "
+                        "background-image: url('C:/VoltingSystem/VotingSystem/images/perfect.png'); "
+                        "background-repeat: no-repeat; "
+                        "background-position: center; "
+                        "background-attachment: fixed; "
+                        "}");
+
+
 }
 
 Candidates::~Candidates()

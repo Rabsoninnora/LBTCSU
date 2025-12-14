@@ -17,6 +17,7 @@ class UserAddmin : public QDialog
 public:
     explicit UserAddmin(QWidget *parent = nullptr);
 
+
 private slots:
     void handleSubmit();
     void handleReset();

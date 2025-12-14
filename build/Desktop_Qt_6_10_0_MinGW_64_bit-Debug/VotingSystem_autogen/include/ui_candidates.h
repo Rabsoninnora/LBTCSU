@@ -46,7 +46,7 @@ public:
         Candidates->setStyleSheet(QString::fromUtf8("background-color: #2980b9;"));
         frame_2 = new QFrame(Candidates);
         frame_2->setObjectName("frame_2");
-        frame_2->setGeometry(QRect(80, 190, 1241, 561));
+        frame_2->setGeometry(QRect(80, 190, 1151, 561));
         frame_2->setStyleSheet(QString::fromUtf8("QFrame{\n"
 "    background-color: rgb(0, 54, 79); /* Your header color */\n"
 "    border-top-left-radius: 0px;\n"
@@ -173,7 +173,7 @@ public:
         btn_candidate_view->setCheckable(true);
         btn_Reset_Candidate_Search = new QPushButton(frame_2);
         btn_Reset_Candidate_Search->setObjectName("btn_Reset_Candidate_Search");
-        btn_Reset_Candidate_Search->setGeometry(QRect(1050, 10, 111, 41));
+        btn_Reset_Candidate_Search->setGeometry(QRect(1020, 10, 111, 41));
         btn_Reset_Candidate_Search->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -211,7 +211,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(8, __qtablewidgetitem8);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(20, 61, 1201, 481));
+        tableWidget->setGeometry(QRect(100, 61, 881, 481));
         pushButton_2 = new QPushButton(Candidates);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(0, 0, 1399, 41));
@@ -299,7 +299,7 @@ public:
         ___qtablewidgetitem7->setText(QCoreApplication::translate("Candidates", "ImageData", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget->horizontalHeaderItem(8);
         ___qtablewidgetitem8->setText(QCoreApplication::translate("Candidates", "ImageName", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Candidates", " LBTCSU VOTING  SYSTEM", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Candidates", " LUSAKA BUSINESS AND TECHNICAL COLLEGE  LBTCSU   VOTING  SYSTEM", nullptr));
         btn_Candidate_back->setText(QCoreApplication::translate("Candidates", "Back", nullptr));
         StudentRegistration_2->setText(QCoreApplication::translate("Candidates", "SEARCH CANDIDATE RECORD", nullptr));
     } // retranslateUi

@@ -17,6 +17,7 @@ public:
     explicit VoterRecords(QWidget *parent = nullptr);
     ~VoterRecords();
 
+
 private slots:
     void on_btn_Reset_Voter_clicked();
 
