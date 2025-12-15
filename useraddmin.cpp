@@ -72,15 +72,15 @@ void UserAddmin::handleSubmit()
 
 
     /////////////////////////////////////////////////////////////////////
-    // Hash the password
-    QByteArray hashedPassword = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();
+    // Hash password
+    QString hashedPassword = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();
     //Check againist the appropriate table based on the role
     QSqlQuery GetUser(MyDB::getInstance()->getDBInstance());
 
     if (role=="Admin"){
         GetUser .prepare("SELECT * FROM AdminDetails WHERE username = :username AND password = :password");
     }else if(role=="Student"){
-        GetUser .prepare("SELECT * FROM AdminDetails WHERE username = :username AND password = :password");
+        GetUser .prepare("SELECT * FROM UserLogin WHERE username = :username AND password = :password");
     } else{
         QMessageBox::warning(this, "Warning!", "Please select a valid account type.");
         return; // Exit if no valid role is selected
@@ -89,7 +89,7 @@ void UserAddmin::handleSubmit()
 
     ////////////////////////////////////////////////////////////////////////////////////////////
     GetUser.bindValue(":username", username);
-    GetUser.bindValue(":password", password);// use hashed password
+    GetUser.bindValue(":password", hashedPassword);// use hashed password
 
 
     if (GetUser.exec()) {
