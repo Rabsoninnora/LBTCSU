@@ -25,7 +25,7 @@ VoterRecords::VoterRecords(QWidget *parent)
                         "}");
 
     ui->tableWidget_2->setVisible(false); // hide table initially
-    ui->tableWidget_2->setIconSize(QSize(64,64)); // thumbnail size
+    ui->tableWidget_2->setIconSize(QSize(150,150)); // thumbnail size
 }
 
 VoterRecords::~VoterRecords()
@@ -38,7 +38,7 @@ void VoterRecords::on_btn_Reset_Voter_clicked()
     ui->txt_Search_Voter->clear();
     ui->tableWidget_2->clear();
     ui->tableWidget_2->setVisible(false);
-    ui->frame_2->setVisible(false);
+
 
 }
 
@@ -65,7 +65,7 @@ void VoterRecords::populateTable(QSqlQuery &query){
             QPixmap pix;
             pix.loadFromData(imageData);
             QTableWidgetItem *imgItem = new QTableWidgetItem;
-            imgItem->setIcon(QIcon(pix.scaled(64,64, Qt::KeepAspectRatio, Qt::SmoothTransformation)));
+            imgItem->setIcon(QIcon(pix.scaled(150,150, Qt::KeepAspectRatio, Qt::SmoothTransformation)));
             ui->tableWidget_2->setItem(row, 4, imgItem);
         }
 

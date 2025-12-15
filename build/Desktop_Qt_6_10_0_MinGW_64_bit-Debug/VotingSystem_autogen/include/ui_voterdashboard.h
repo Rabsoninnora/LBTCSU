@@ -27,7 +27,6 @@ public:
     QPushButton *btn_view_candidate;
     QPushButton *btn_AccountView;
     QPushButton *btn_CastVote;
-    QPushButton *btn_ResultsView;
 
     void setupUi(QDialog *VoterDashboard)
     {
@@ -127,28 +126,11 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_ResultsView = new QPushButton(VoterDashboard);
-        btn_ResultsView->setObjectName("btn_ResultsView");
-        btn_ResultsView->setGeometry(QRect(20, 510, 181, 41));
-        btn_ResultsView->setStyleSheet(QString::fromUtf8("    \n"
-"QPushButton{\n"
-"                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
-"                    border-radius: 8px;\n"
-"                    padding: 0 8px;\n"
-"                    background-color: rgb(255, 267, 245);\n"
-"                    font: 500 11pt ;\n"
-"                   \n"
-"\n"
-"}\n"
-"\n"
-" "));
         Side_Nav->raise();
         BodyLabel->raise();
         btn_view_candidate->raise();
         btn_AccountView->raise();
         btn_CastVote->raise();
-        btn_ResultsView->raise();
         pushButton->raise();
         btn_logout->raise();
 
@@ -167,7 +149,6 @@ public:
         btn_view_candidate->setText(QCoreApplication::translate("VoterDashboard", "View Candidate", nullptr));
         btn_AccountView->setText(QCoreApplication::translate("VoterDashboard", "View Account", nullptr));
         btn_CastVote->setText(QCoreApplication::translate("VoterDashboard", "Cast Vote", nullptr));
-        btn_ResultsView->setText(QCoreApplication::translate("VoterDashboard", "View Results", nullptr));
     } // retranslateUi
 
 };

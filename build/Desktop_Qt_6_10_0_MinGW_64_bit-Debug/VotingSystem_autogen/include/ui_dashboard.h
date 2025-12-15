@@ -29,6 +29,7 @@ public:
     QLabel *BodyLabel;
     QPushButton *btn_voter_account;
     QPushButton *Side_Nav;
+    QPushButton *btn_ResultsView;
 
     void setupUi(QDialog *Dashboard)
     {
@@ -170,6 +171,22 @@ public:
 "	border-radius:0px;\n"
 "	color:rgb(188, 188, 188);\n"
 "}"));
+        btn_ResultsView = new QPushButton(Dashboard);
+        btn_ResultsView->setObjectName("btn_ResultsView");
+        btn_ResultsView->setGeometry(QRect(10, 520, 181, 41));
+        btn_ResultsView->setStyleSheet(QString::fromUtf8("    \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
         Side_Nav->raise();
         pushButton->raise();
         btn_Dashboard_logout->raise();
@@ -179,6 +196,7 @@ public:
         btn_voter_records->raise();
         BodyLabel->raise();
         btn_voter_account->raise();
+        btn_ResultsView->raise();
 
         retranslateUi(Dashboard);
 
@@ -197,6 +215,7 @@ public:
         BodyLabel->setText(QString());
         btn_voter_account->setText(QCoreApplication::translate("Dashboard", "Create Voter Account", nullptr));
         Side_Nav->setText(QString());
+        btn_ResultsView->setText(QCoreApplication::translate("Dashboard", "View Results", nullptr));
     } // retranslateUi
 
 };

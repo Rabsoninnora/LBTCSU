@@ -102,7 +102,7 @@ QPushButton{
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"> </string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -192,40 +192,11 @@ QPushButton{
     <string>Cast Vote</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_ResultsView">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>510</y>
-     <width>181</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">    
-QPushButton{
-                    color: rgb(255, 255, 255);
-                    border:2px solid green;
-                    border-radius: 8px;
-                    padding: 0 8px;
-                    background-color: rgb(255, 267, 245);
-                    font: 500 11pt ;
-                   
-
-}
-
- </string>
-   </property>
-   <property name="text">
-    <string>View Results</string>
-   </property>
-  </widget>
   <zorder>Side_Nav</zorder>
   <zorder>BodyLabel</zorder>
   <zorder>btn_view_candidate</zorder>
   <zorder>btn_AccountView</zorder>
   <zorder>btn_CastVote</zorder>
-  <zorder>btn_ResultsView</zorder>
   <zorder>pushButton</zorder>
   <zorder>btn_logout</zorder>
  </widget>

@@ -763,6 +763,8 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/registervoter.h \
 	C:/VoltingSystem/VotingSystem/useraddmin.cpp \
 	C:/VoltingSystem/VotingSystem/useraddmin.h \
+	C:/VoltingSystem/VotingSystem/viewresults.cpp \
+	C:/VoltingSystem/VotingSystem/viewresults.h \
 	C:/VoltingSystem/VotingSystem/voterdashboard.cpp \
 	C:/VoltingSystem/VotingSystem/voterdashboard.h \
 	C:/VoltingSystem/VotingSystem/voterrecords.cpp \
@@ -775,6 +777,7 @@ VotingSystem_autogen/timestamp: \
 	C:/VoltingSystem/VotingSystem/dashboard.ui \
 	C:/VoltingSystem/VotingSystem/mainwindow.ui \
 	C:/VoltingSystem/VotingSystem/registercandidate.ui \
+	C:/VoltingSystem/VotingSystem/viewresults.ui \
 	C:/VoltingSystem/VotingSystem/voterdashboard.ui \
 	C:/VoltingSystem/VotingSystem/voterrecords.ui \
 	C:/VoltingSystem/VotingSystem/voters.ui \
